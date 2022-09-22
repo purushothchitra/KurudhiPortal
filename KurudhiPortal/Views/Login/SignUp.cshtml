@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KurudhiPortal</title>
+    <link rel="icon" type="image/x-icon" href="~/images/NTK_KURUDHI_Logo.jpg">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/css/signup.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/signup.js"></script>
+</head>
+<body>
+    <section class="header-section">
+            <div class="header">
+                <div class="container-fluied">
+                    <div class="row">
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
+                              <div class="log-in-container">
+                                <div class="inner-container">
+                                        <div class="first-container">
+                                            <div class="form-group age-container mb-3">
+                                        <input type="text" class="form-control input-filed" id="firstname"  aria-describedby="emailHelp" placeholder="">
+                                        <small id="firstname-validation"></small>
+                                        <div class="age-position">
+                                            <span class="">First Name</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group age-container mb-3">
+                                        <input type="text" class="form-control input-filed" id="lastname"  aria-describedby="emailHelp" placeholder="">
+                                        <small id="lastname-validation"></small>
+                                        <div class="age-position">
+                                            <span class="">Last Name</span>
+                                        </div>
+                                    </div>
+                                    <select class="form-select" aria-label="Default select example mb-3">
+                                        <option disabled selected hidden>Gender</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                        <option value="3">Others</option>
+                                    </select>
+                                    <div class="form-group age-container mb-3">
+                                        <input type="number" class="form-control input-filed" id="age"  aria-describedby="emailHelp" placeholder="">
+                                        <small id="age-validation"></small>
+                                        <div class="age-position">
+                                            <span class="">Age</span>
+                                        </div>
+                                    </div>
+                                    <select class="form-select" aria-label="Default select example mb-3">
+                                        <option disabled selected hidden>Blood Group</option>
+                                        <option value="1">A+ve</option>
+                                        <option value="2">A-ve</option>
+                                        <option value="3">B+ve</option>
+                                        <option value="3">B-ve</option>
+                                    </select>
+                                    <div class="form-group age-container mb-3">
+                                        <input type="number" class="form-control input-filed" id="mob-num"  aria-describedby="emailHelp" placeholder="">
+                                        <small id="mob-validation"></small>
+                                        <div class="age-position">
+                                            <span class="">Mobile Number</span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="second-container">
+                                        <select class="form-select" aria-label="Default select example mb-3">
+                                          <option disabled selected hidden>Select Country</option>
+                                          <option value="1">India</option>
+                                          <option value="2">America</option>
+                                          <option value="3">China</option>
+                                          <option value="3">Japan</option>
+                                        </select>
+                                        <select class="form-select" aria-label="Default select example mb-3">
+                                          <option disabled selected hidden>Select State</option>
+                                          <option value="1">Tamil Nadu</option>
+                                          <option value="2">Kerla</option>
+                                          <option value="3">Utra Pradesh</option>
+                                          <option value="3">Asam</option>
+                                        </select>
+                                        <select class="form-select" aria-label="Default select example mb-3">
+                                          <option disabled selected hidden>Select District</option>
+                                          <option value="1">Chennai</option>
+                                          <option value="2">Kanchipuram</option>
+                                          <option value="3">kadalur</option>
+                                          <option value="3">Vellur</option>
+                                        </select>
+                                        <div class="form-group age-container mb-3">
+                                            <input type="email" class="form-control input-filed" id="email"  aria-describedby="emailHelp" placeholder="">
+                                            <small id="email-validation"></small>
+                                            <div class="age-position">
+                                                <span class="">Email</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group age-container mb-3">
+                                            <input type="password" class="form-control input-filed" id="password"  aria-describedby="emailHelp" placeholder="">
+                                            <small id="password-validation"></small>
+                                            <div class="age-position">
+                                                <span class="">Password</span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                    <div class="sign-up-box">
+                                        <button class="btn sign-up-btn">Sign Up</button>
+                                    </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+
