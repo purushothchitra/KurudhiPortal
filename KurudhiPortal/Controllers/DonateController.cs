@@ -8,5 +8,9 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
+        public IActionResult DonationHistory()
+        {
+            return View();
+        }
     }
 }

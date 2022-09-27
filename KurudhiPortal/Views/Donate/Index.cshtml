@@ -1,7 +1,37 @@
 ﻿
-@{
-    ViewData["Title"] = "Index";
-}
 
-<h1>Index</h1>
+@{
+    ViewData["Title"] = "Donate";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KurudhiPortal</title>
+    <link rel="icon" type="image/x-icon" href="~/images/NTK_KURUDHI_Logo.jpg">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/blood_request.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KurudhiPortal.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/donate.js"></script>
+</head>
+<body>
+        <section class="request-container">
+            <div class="near-me bottom-line">
+                Blood Request(Near Me)
+            </div>
+            <div class="all-over">
+                All Over
+            </div>
+        </section>
+        <section class="near-request">
+            <div>near-request</div>
+        </section>
+        <section class="all-over-request">
+            <div>all-over-request</div>
+        </section>
+</body>
+
+
 

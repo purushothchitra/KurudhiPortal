@@ -1,0 +1,46 @@
+﻿.request-container{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 20px -20px;
+}
+.near-me,.all-over{
+  width: 50%;
+  padding: 15px 0;
+  text-align: center;
+  background-color: white;
+  font-weight:bold;
+  font-size: 18px;
+  color: #CD0E15;
+  cursor: context-menu;
+  position: relative;
+}
+.near-request,.all-over-request{
+  margin: 10px 10px;
+}
+.all-over-request{
+  display: none;
+} 
+
+/* admin access nav start */
+ .admin-section{
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 20px -20px;
+}
+.raised-request , .approver-request , .pending-request{
+  width: 33.3%;
+  padding: 15px 0;
+  text-align: center;
+  background-color: white;
+  font-weight:bold;
+  font-size: 18px;
+  color: #CD0E15;
+  cursor: context-menu;
+  position: relative;
+}
+.bottom-line {
+    border-bottom: 4px solid #CD0E16;
+}
+.approver-content,.pending-content{
+  display: none;
+}
+/* admin access nav end */

@@ -21,7 +21,19 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
+        public IActionResult particial()
+        {
+            return View();
+        }
         public IActionResult SignUp()
+        {
+            return View();
+        }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+        public IActionResult FeedBack()
         {
             return View();
         }

@@ -12,5 +12,9 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
+        public IActionResult MyDashBoard()
+        {
+            return View();
+        }
     }
 }

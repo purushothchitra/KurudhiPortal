@@ -1,25 +1,35 @@
 ﻿$(document).ready(function () {
     $("#task-form").validate({
         rules: {
-            fname: {
+            name: {
                 required: true
             },
-            lname: {
+            duedate: {
                 required: true,
             },
-            email: {
+            admissionid: {
                 required: true,
-                email: true
             },
-            password: {
+            atname: {
                 required: true,
-                minlength: 8
             },
             age: {
                 required: true
             },
-            mobilenumber: {
+            contact: {
                 required: true,
+            },
+            bloodrequirment: {
+                required: true,
+            },
+            hosname: {
+                required: true,
+            },
+            hosaddress: {
+                required: true
+            },
+            bdunit: {
+                required: true
             },
             district: {
                 required: true,
@@ -31,6 +41,9 @@
                 required: true,
             },
             state: {
+                required: true,
+            },
+            medicalstatus: {
                 required: true,
             },
             country: {
@@ -38,28 +51,35 @@
             }
         },
         messages: {
-            fname: {
+            name: {
                 required: "Please Fill The Name"
             },
-            lname: {
-                required: "Please Fill The lastname"
+            duedate: {
+                required: "Please Fill The DueDate"
             },
-            email: {
-                required: "Please Enter Email",
-                email: "Please Enter Correct Email"
+            admissionid: {
+                required: "Please Fill The Admission Id",
             },
-            required: {
-                required: "Please Enter Password",
-                minlength: "Please Enter maximum 8 Characters"
+            atname: {
+                required: "Please Fill The Attender Name",
             },
             age: {
                 required: "Please Fill The Age"
             },
-            bloodgroup: {
-                required: "Please Enter Blood Group"
-            },
-            mobilenumber: {
+            contact: {
                 required: "Please Fill The Contact",
+            },
+            bloodrequirment: {
+                required: "Please fill the type",
+            },
+            hosname: {
+                required: "Plese Enter Hospital Name"
+            },
+            hosaddress: {
+                required: "please Enter Hospital Address"
+            },
+            bdunit: {
+                required: "Please Enter Blood Unit"
             },
             district: {
                 required: "please Select district"
@@ -67,12 +87,18 @@
             gender: {
                 required: "please select Gender"
             },
+            bloodgroup: {
+                required: "please select Blood Group"
+            },
             country: {
                 required: "Please Select Country"
             },
             state: {
                 required: "Please Select State"
             },
+            medicalstatus: {
+                required: "please Select MedicalStatus"
+            }
         }
     });
 });

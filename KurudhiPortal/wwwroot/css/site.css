@@ -33,24 +33,23 @@ html {
 }
 
 #brand {
-    font-weight: 700;
-    position: relative;
+    font-weight: 700 !important;
+    position: relative !important;
     top: 3px !important;
-    color: #CD0E16;
+    color: #CD0E16 !important;
 }
 
 /* side navbar start */
-.side-nav {
-    min-width: 230px;
-    max-width: 100%;
-    background-color: white;
+.side-nav-section {
+    width: 250px;
     border:1px solid red;
     padding-bottom: 30px;
-    position: absolute !important;
-    top: 85px !important;
     z-index: 99;
-    border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
+    transition: width .3s ease;
+    height:650px !important;
+    background-color:white;
+    /* border-top-right-radius:20px;
+    border-bottom-right-radius:20px; */
 }
 .logo-container{
   height: 150px;
@@ -63,7 +62,6 @@ html {
   display: flex;
   justify-content: center;
   position: relative;
-  border-top-right-radius: 19px;
 }
 .menu-list-container a{
   text-decoration: none;
@@ -84,7 +82,7 @@ html {
   margin-right: 20px;
   font-size: 18px;
 }
-.cancel-icon-container{
+.cancel-icon-container,.push-arrow{
   font-size: 25px;
   font-weight: bold;
   position: absolute;
@@ -92,6 +90,11 @@ html {
   right: 10px;
   color: white;
   transition:.3s ease;
+}
+.push-arrow{
+  display: none;
+  position:relative !important;
+  color:black;
 }
 .cancel-icon-container:hover{
     right:14px;
@@ -105,5 +108,33 @@ html {
 .admin-users{
     border-top:2px solid #a6a6a6;
     border-bottom:2px solid #a6a6a6;
+}
+.overall-layout{
+  display: flex;
+}
+.main-page-container{
+  width: 100%;
+}
+.menu-list{
+    margin-left:50px !important;
+}
+.setting-icon{
+    font-size:20px;
+}
+.tooltip-inner {
+    background-color: #CD0E16 !important;
+    color: #fff;
+    font-weight:500;
+}
+.active-class{
+    border-bottom:3px solid red;
+}
+.nav-link {
+    margin: 0 10px;
+    padding: 5px 16px !important;
+}
+.nav-link:hover{
+    background-color:#CD0E16;
+    color:white !important;
 }
 /* side navbar end */

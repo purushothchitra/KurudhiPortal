@@ -1,6 +1,8 @@
 ﻿.header{
   max-width:1200px;
   margin:0 auto;
+  padding:30px 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .log-in-container{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -92,11 +94,43 @@
 .first-container{
   margin-right: 30px;
 }
+.error{
+    color:red;
+}
+.sign-up{
+    display:flex;
+    justify-content:center;
+}
+.signup-btn{
+    font-weight:500;
+    color:white;
+}
+.signup-btn:hover{
+    color:white;
+}
+.header h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#CD0E16;
+}
+.form-group{
+    margin-bottom:20px !important;
+}
 @media only screen and (max-width:768px) {
-  .second-container,.first-container{
+    .second-container,.first-container{
     width: 100%;
   }
   .inner-container{
     display: block;
   }
+  .form-group div{
+      margin-bottom:25px;
+  }
+  .form-group{
+    margin-bottom:0px !important;
+}
+  .form-select {
+    color: #737373;
+    margin-bottom: 0px !important;
+}
 }

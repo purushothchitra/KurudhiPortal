@@ -1,0 +1,157 @@
+﻿@*
+@{
+    ViewData["Title"] = "New ";
+}*@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*<title>@ViewData["Title"] - KurudhiPortal</title>*@
+    <link rel="icon" type="image/x-icon" href="~/images/NTK_KURUDHI_Logo.jpg">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/newbloodrequest.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KurudhiPortal.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery.validate.js"></script>
+    <script src="~/js/newbloodrequest.js"></script>
+</head>
+<body>
+    <section>
+        <div class="form-header">
+            <div>
+                 <button class="btn back-btn">Back</button>
+            </div>
+            <div class="heading-text">
+                <h2 class="heading-blood-request">New Blood Request</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+                <form id="task-form">
+            <div class="form-group row task mb-4" id="1">
+                <div class="col col-md-6">
+                    <input type="text" class="form-control" name="name" tabindex="1">
+                </div>
+                <div class="col col-md-6">
+                    <input type="date" class="form-control" name="duedate" tabindex="2">
+                </div>                   
+            </div> 
+            <div class="form-group row task mb-4" id="12">
+                <div class="col col-md-6">
+                    <input type="number" class="form-control form-control-sm" name="admissionid" tabindex="3">
+                </div>
+                <div class="col col-md-6">
+                    <input type="text" class="form-control form-control-sm" name="atname" tabindex="4">
+                </div>                   
+            </div> 
+            <div class="form-group row task mb-4" id="12">
+                <div class="col col-md-6">
+                    <input type="number" class="form-control form-control-sm" name="age" tabindex="5">
+                </div>
+                <div class="col col-md-6 div-container">
+                    <input type="number" class="form-control form-control-sm form-input" name="contact" tabindex="6">
+                </div>                    
+            </div> 
+            <div class="form-group row task mb-4" id="12">
+                <div class="col col-md-6 radio-group">
+                    <div>
+                        <input type="radio" name="bloodrequirment" value="Blood" id="male" tabindex="7">
+                        <label for="male" class="radio-label">Blood</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="bloodrequirment" value="Plasma" id="female" tabindex="8">
+                        <label for="female" class="radio-label">Plasma</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="bloodrequirment" value="Platted" id="female" tabindex="9">
+                        <label for="female" class="radio-label">Platted</label>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <input type="text" class="form-control form-control-sm" name="hosname" tabindex="10">
+                </div>                    
+            </div> 
+            <div class="form-group row task mb-4" id="12">
+                <div class="col col-md-6">
+                    <select class="form-select" name="gender" tabindex="11">
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Ohers">Ohers</option>
+                      </select>
+                </div>
+                <div class="col col-md-6">
+                    <input type="text" class="form-control form-control-sm" name="hosaddress" tabindex="12">
+                </div>                    
+            </div> 
+            <div class="form-group row task mb-4" id="12">
+                <div class="col col-md-6">
+                    <select class="form-select" name="bloodgroup" tabindex="13">
+                        <option value="">Blood Group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="b+">b+</option>
+                        <option value="b-">b-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                      </select>
+                </div>
+                <div class="col col-md-6">
+                    <select class="form-select" name="country" tabindex="14">
+                        <option value="">Country</option>
+                        <option value="India">India</option>
+                      </select>
+                </div>                    
+            </div> 
+            <div class="form-group row task mb-4" id="12">
+                <div class="col col-md-6">
+                    <input type="number" class="form-control form-control-sm checkbox" name="bdunit" tabindex="16">
+                </div>
+                <div class="col col-md-6">
+                    <select class="form-select" name="state" tabindex="17">
+                        <option value="">Select State</option>
+                        <option value="TamilNadu">Tamil Nadu</option>
+                        <option value="Kerla">Kerla</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="AndraPradesh">Andra Pradesh</option>
+                      </select>
+                </div>                     
+            </div>
+            <div class="form-group row task mb-4" id="12">
+                <div class="col col-md-6">
+                    <select class="form-select" name="medicalstatus" tabindex="18">
+                        <option value="">Medical Status</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Emergency">Emergency</option>
+                      </select>
+                </div>
+                <div class="col col-md-6">
+                    <select class="form-select" name="district" tabindex="19">
+                        <option value="">District</option>
+                        <option value="Ariyalur">Ariyalur</option>
+                        <option value="Chengalpattu">Chengalpattu</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Cuddalore">Cuddalore</option>
+                        <option value="Dharmapuri">Dharmapuri</option>
+                        <option value="Dindigul">Dindigul</option>
+                        <option value="Erode">Erode</option>
+                        <option value="Kallakurichi">Kallakurichi</option>
+                        <option value="Kancheepuram">Kancheepuram</option>
+                        <option value="Karur">Karur</option>
+                        <option value="Krishnagiri">Krishnagiri</option>
+                        <option value="Madurai">Madurai</option>
+                      </select>
+                </div>                   
+            </div>
+            <div class="request-btn">
+                <button type="submit" class="btn request-btn" tabindex="20">Confirm Request</button>
+            </div>
+        </form>
+        </div>
+    </section>
+</body>
+

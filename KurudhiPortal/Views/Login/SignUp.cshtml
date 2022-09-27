@@ -14,104 +14,102 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/signup.js"></script>
+    <script src="~/js/jquery.validate.js"></script>
 </head>
 <body>
     <section class="header-section">
-            <div class="header">
-                <div class="container-fluied">
-                    <div class="row">
-                          <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
-                              <div class="log-in-container">
-                                <div class="inner-container">
-                                        <div class="first-container">
-                                            <div class="form-group age-container mb-3">
-                                        <input type="text" class="form-control input-filed" id="firstname"  aria-describedby="emailHelp" placeholder="">
-                                        <small id="firstname-validation"></small>
-                                        <div class="age-position">
-                                            <span class="">First Name</span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group age-container mb-3">
-                                        <input type="text" class="form-control input-filed" id="lastname"  aria-describedby="emailHelp" placeholder="">
-                                        <small id="lastname-validation"></small>
-                                        <div class="age-position">
-                                            <span class="">Last Name</span>
-                                        </div>
-                                    </div>
-                                    <select class="form-select" aria-label="Default select example mb-3">
-                                        <option disabled selected hidden>Gender</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                        <option value="3">Others</option>
-                                    </select>
-                                    <div class="form-group age-container mb-3">
-                                        <input type="number" class="form-control input-filed" id="age"  aria-describedby="emailHelp" placeholder="">
-                                        <small id="age-validation"></small>
-                                        <div class="age-position">
-                                            <span class="">Age</span>
-                                        </div>
-                                    </div>
-                                    <select class="form-select" aria-label="Default select example mb-3">
-                                        <option disabled selected hidden>Blood Group</option>
-                                        <option value="1">A+ve</option>
-                                        <option value="2">A-ve</option>
-                                        <option value="3">B+ve</option>
-                                        <option value="3">B-ve</option>
-                                    </select>
-                                    <div class="form-group age-container mb-3">
-                                        <input type="number" class="form-control input-filed" id="mob-num"  aria-describedby="emailHelp" placeholder="">
-                                        <small id="mob-validation"></small>
-                                        <div class="age-position">
-                                            <span class="">Mobile Number</span>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="second-container">
-                                        <select class="form-select" aria-label="Default select example mb-3">
-                                          <option disabled selected hidden>Select Country</option>
-                                          <option value="1">India</option>
-                                          <option value="2">America</option>
-                                          <option value="3">China</option>
-                                          <option value="3">Japan</option>
-                                        </select>
-                                        <select class="form-select" aria-label="Default select example mb-3">
-                                          <option disabled selected hidden>Select State</option>
-                                          <option value="1">Tamil Nadu</option>
-                                          <option value="2">Kerla</option>
-                                          <option value="3">Utra Pradesh</option>
-                                          <option value="3">Asam</option>
-                                        </select>
-                                        <select class="form-select" aria-label="Default select example mb-3">
-                                          <option disabled selected hidden>Select District</option>
-                                          <option value="1">Chennai</option>
-                                          <option value="2">Kanchipuram</option>
-                                          <option value="3">kadalur</option>
-                                          <option value="3">Vellur</option>
-                                        </select>
-                                        <div class="form-group age-container mb-3">
-                                            <input type="email" class="form-control input-filed" id="email"  aria-describedby="emailHelp" placeholder="">
-                                            <small id="email-validation"></small>
-                                            <div class="age-position">
-                                                <span class="">Email</span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group age-container mb-3">
-                                            <input type="password" class="form-control input-filed" id="password"  aria-describedby="emailHelp" placeholder="">
-                                            <small id="password-validation"></small>
-                                            <div class="age-position">
-                                                <span class="">Password</span>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </div>
-                                    <div class="sign-up-box">
-                                        <button class="btn sign-up-btn">Sign Up</button>
-                                    </div>
-                              </div>
-                          </div>
+        <div class="header">
+            <h2>SignUp</h2>
+            <form id="task-form">
+                <div class="form-group row task" id="1">
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="text" class="form-control" id="fname" name="fname" tabindex="1">
                     </div>
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <select class="form-select" name="country" tabindex="2">
+                            <option value="">Country</option>
+                            <option value="India">India</option>
+                        </select>
+                    </div>                   
+                </div> 
+                <div class="form-group row task" id="12">
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="text" class="form-control" id="lname" name="lname" tabindex="3">
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-12">
+                         <select class="form-select" name="state" tabindex="5">
+                            <option value="">Select State</option>
+                            <option value="TamilNadu">Tamil Nadu</option>
+                            <option value="Kerla">Kerla</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="AndraPradesh">Andra Pradesh</option>
+                          </select>
+                    </div>                   
+                </div> 
+                <div class="form-group row task" id="12">
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <select class="form-select" name="gender" tabindex="6">
+                            <option value="">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Ohers">Ohers</option>
+                          </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-12 div-container">
+                        <select class="form-select" name="district" tabindex="7">
+                            <option value="">District</option>
+                            <option value="Ariyalur">Ariyalur</option>
+                            <option value="Chengalpattu">Chengalpattu</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Cuddalore">Cuddalore</option>
+                            <option value="Dharmapuri">Dharmapuri</option>
+                            <option value="Dindigul">Dindigul</option>
+                            <option value="Erode">Erode</option>
+                            <option value="Kallakurichi">Kallakurichi</option>
+                            <option value="Kancheepuram">Kancheepuram</option>
+                            <option value="Karur">Karur</option>
+                            <option value="Krishnagiri">Krishnagiri</option>
+                            <option value="Madurai">Madurai</option>
+                          </select>
+                    </div>                    
+                </div> 
+                <div class="form-group row task" id="">
+                    <div class="col-12 col-md-6 col-sm-12" >
+                        <input type="number" class="form-control" id="age" name="age" tabindex="8">
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="email" class="form-control" id="email" name="email" tabindex="9">
+                    </div>                    
+                </div> 
+                <div class="form-group row task" id="">
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <select class="form-select" name="bloodgroup" tabindex="10">
+                            <option value="">Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="b+">b+</option>
+                            <option value="b-">b-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                          </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="password" class="form-control" id="Password" name="password" tabindex="11">
+                    </div>                    
+                </div> 
+                <div class="form-group row task" id="12">
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="number" class="form-control" id="mobilenumber" name="mobilenumber" tabindex="12">
+                    </div>                    
                 </div>
-            </div>
+                <div class="sign-up">
+                    <button type="submit" class="btn signup-btn" tabindex="13">Confirm Request</button>
+                </div>
+            </form>
+        </div>
         </section>
 </body>
 

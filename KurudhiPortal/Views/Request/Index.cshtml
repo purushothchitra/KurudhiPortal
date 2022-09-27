@@ -1,7 +1,34 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Request";
 }
-
-<h1>Index</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KurudhiPortal</title>
+    <link rel="icon" type="image/x-icon" href="~/images/NTK_KURUDHI_Logo.jpg">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/blood_request.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KurudhiPortal.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/request.js"></script>
+</head>
+<body>
+        <section class="admin-section">
+            <div class="raised-request bottom-line">Raised Request</div>
+            <div class="approver-request">Approved Request</div>
+            <div class="pending-request">Pending Request</div>
+        </section>
+        <section class="raised-content">
+            Raised Request
+        </section>
+        <section class="approver-content">
+            Approved Request
+        </section>
+        <section class="pending-content">
+            Pending Request
+        </section> 
+</body>
 
