@@ -8,10 +8,7 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
-        public IActionResult Landing()
-        {
-            return View();
-        }
+       
         public IActionResult MyDashBoard()
         {
             return View();

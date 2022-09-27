@@ -119,4 +119,7 @@
 .error{
     color:red;
 }
+.border-line{
+    border:1px solid red;
+}
 /*login section end*/

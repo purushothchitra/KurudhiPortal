@@ -96,3 +96,6 @@ input[type="radio"]{
 .plus-icon{
     display:none !important;
 }
+.border-line{
+    border:1px solid red;
+}

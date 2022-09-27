@@ -99,6 +99,12 @@
             medicalstatus: {
                 required: "please Select MedicalStatus"
             }
+        },
+        highlight: function (element) {
+            $(element).addClass('border-line');
+        },
+        unhighlight: function (element) {
+            $(element).removeClass('border-line');
         }
     });
 });

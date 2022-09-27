@@ -19,14 +19,18 @@
 <body>
     <section class="header-section">
         <div class="header">
+            <div class="sign-up-logo">
+                <img src="~/images/runner.jpg" width="200" height="200"/>
+            </div>
             <h2>SignUp</h2>
             <form id="task-form">
-                <div class="form-group row task" id="1">
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <input type="text" class="form-control" id="fname" name="fname" tabindex="1">
+                <div class="form-group row" id="1">
+                    <div class="col-12 col-md-6 col-sm-12 input-container">
+                        <input type="text" class="form-control input-field" id="fname" name="fname" tabindex="1">
+                        <label class="floating-label">First Name</label>
                     </div>
                     <div class="col-12 col-md-6 col-sm-12">
-                        <select class="form-select" name="country" tabindex="2">
+                        <select class="form-select" name="country" id="country" tabindex="2">
                             <option value="">Country</option>
                             <option value="India">India</option>
                         </select>
@@ -37,7 +41,7 @@
                         <input type="text" class="form-control" id="lname" name="lname" tabindex="3">
                     </div>
                     <div class="col-12 col-md-6 col-sm-12">
-                         <select class="form-select" name="state" tabindex="5">
+                         <select class="form-select" name="state" id="state" tabindex="5">
                             <option value="">Select State</option>
                             <option value="TamilNadu">Tamil Nadu</option>
                             <option value="Kerla">Kerla</option>
@@ -48,7 +52,7 @@
                 </div> 
                 <div class="form-group row task" id="12">
                     <div class="col-12 col-md-6 col-sm-12">
-                        <select class="form-select" name="gender" tabindex="6">
+                        <select class="form-select" name="gender" id="gender" tabindex="6">
                             <option value="">Gender</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -56,7 +60,7 @@
                           </select>
                     </div>
                     <div class="col-12 col-md-6 col-sm-12 div-container">
-                        <select class="form-select" name="district" tabindex="7">
+                        <select class="form-select" name="district" id="district" tabindex="7">
                             <option value="">District</option>
                             <option value="Ariyalur">Ariyalur</option>
                             <option value="Chengalpattu">Chengalpattu</option>
@@ -84,7 +88,7 @@
                 </div> 
                 <div class="form-group row task" id="">
                     <div class="col-12 col-md-6 col-sm-12">
-                        <select class="form-select" name="bloodgroup" tabindex="10">
+                        <select class="form-select" name="bloodgroup" id="bloodgroup" tabindex="10">
                             <option value="">Blood Group</option>
                             <option value="A+">A+</option>
                             <option value="A-">A-</option>

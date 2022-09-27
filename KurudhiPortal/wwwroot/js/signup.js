@@ -73,6 +73,43 @@
             state: {
                 required: "Please Select State"
             },
+            highlight: function (element) {
+                $(element).addClass('border-line');
+            },
+            unhighlight: function (element) {
+                $(element).removeClass('border-line');
+            }
         }
     });
-});
+    $(".signup-btn").click(function () {
+        $("#task-form").validate();
+            let userDetails = {
+                fname: $("#fname").val(),
+                country: $("#country").val(),
+                lname: $("#lname").val(),
+                state: $("#state").val(),
+                gender: $("#gender").val(),
+                district: $("#district").val(),
+                age: $("#age").val(),
+                bloodgroup: $("#bloodgroup").val(),
+                Password: $("#Password").val(),
+                mobilenumber: $("#mobilenumber").val(),
+                email: $("#email").val(),
+            }
+
+            $.ajax({
+                url: './User/SearchDonors',
+                type: 'GET',
+                data: userDetails,
+                success: function (data) {
+                    debugger;
+                    if (data.status == "success") {
+                        window.location = "/Dashboard/Index"
+                    }
+                },
+                error: function (textStatus, errorThrown) {
+                    console.log('Error in Operation');
+                }
+            });
+    });
+    })

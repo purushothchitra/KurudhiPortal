@@ -15,16 +15,15 @@ namespace KurudhiPortal.Controllers
 
         public IActionResult Index()
         {
-            return View();
+           return View();
         }
-        public IActionResult Login()
+
+        public IActionResult SignIn(LoginViewModel userValidation)
         {
-            return View();
+            return Json(new { status = "success", ex = "Model recieved" });
         }
-        public IActionResult particial()
-        {
-            return View();
-        }
+        
+
         public IActionResult SignUp()
         {
             return View();

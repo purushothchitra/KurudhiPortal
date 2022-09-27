@@ -4,7 +4,7 @@ namespace KurudhiPortal.Controllers
 {
     public class AdminController : Controller
     {
-        public IActionResult admin()
+        public IActionResult Admin()
         {
             return View();
         }
