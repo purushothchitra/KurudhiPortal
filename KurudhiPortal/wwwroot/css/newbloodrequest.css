@@ -15,22 +15,7 @@
     color:#CD0E16;
     margin-bottom:50px;
 }
-.input-container{
-    position:relative
-}
-.input-placeholder{
-    position:absolute;
-    top:5px;
-    left:10px;
-    transition:.5s ease;
-    background-color:white;
-}
-.input-field:focus ~ .input-placeholder{
-    top:-11px;
-}
-.input-field:focus{
-    box-shadow:none;
-}
+
 .form-header{
     display:flex !important;
 }

@@ -83,6 +83,7 @@
     });
     $(".signup-btn").click(function () {
         $("#task-form").validate();
+        if ($("#task-form").valid()) {
             let userDetails = {
                 fname: $("#fname").val(),
                 country: $("#country").val(),
@@ -111,5 +112,6 @@
                     console.log('Error in Operation');
                 }
             });
+        }
     });
     })

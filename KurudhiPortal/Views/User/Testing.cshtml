@@ -4,83 +4,30 @@
 }
 <head>
      <style>
-    .input-group {
-  position: relative;
-  margin: 40px 0 20px;
+         .input-group {
+	position: relative;
 }
-.input-contadiner{
-    position: relative;
-  margin: 40px 0 20px;
+.input-group .floating-label-1 {
+	position: absolute;
+	pointer-events: none;
+	top: 18px;
+	left: 10px;
+	transition: 0.2s ease all;
 }
-.input{
-     font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid #757575;
+.input-group input:focus ~ .floating-label-1,
+.input-group input:not(:focus):valid ~ .floating-label-1{
+	top: 0px;
+	left: 10px;
+	font-size: 13px;
+	opacity: 1;
 }
-input {
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid #757575;
-}
-
-input:focus {
-  outline: none;
-}
-
-label {
-  color: #999;
-  font-size: 18px;
-  font-weight: normal;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 0.2s ease all;
-}
-.label{
-    color: #999;
-  font-size: 18px;
-  font-weight: normal;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 0.2s ease all;
-}
-
-input:focus ~ label,
-input:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #4285f4;
-}
-input:focus ~ label,
-input:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #4285f4;
-}
-
-
-
-/* animations */
-
 </style>
+
 </head>
 <body>
     <div class="input-group">
   <input type="password" required>
-  <label>Password</label>
-</div>
-<div class="input-contadiner">
-  <input type="password" class="input">
-  <label class="label">Password</label>
+  <label class="floating-label-1">Password</label>
 </div>
 </body>
 

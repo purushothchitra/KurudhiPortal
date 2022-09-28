@@ -55,12 +55,12 @@ html {
   height: 150px;
   max-width: 250px;
   min-width:50px;
+  display: flex;
+  justify-content: center;
 }
 .image-container{
   background-color:#CD0E15;
   padding: 10px 0;
-  display: flex;
-  justify-content: center;
   position: relative;
 }
 .menu-list-container a{
@@ -95,6 +95,7 @@ html {
   display: none;
   position:relative !important;
   color:black;
+  padding: 10px 0px 10px 32px;
 }
 .cancel-icon-container:hover{
     right:14px;
