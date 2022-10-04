@@ -1,0 +1,11 @@
+﻿.about-us-container p{
+    line-height:2;
+    background-color:red;
+}
+.about-us-container{
+    width:300px;
+}
+.icon-container{
+    display:flex;
+    justify-content:center;
+}

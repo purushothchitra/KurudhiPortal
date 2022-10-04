@@ -6,47 +6,30 @@
   display: flex;
   justify-content: center;
 }
-
-.email-container{
-  position:relative;
+.input-container {
+    position: relative;
 }
-.input:focus ~ .email-position {
-    top: -12px;
+.password-hide-icon,.password-show-icon{
+    position:absolute !important;
+    top:10px;
+    right:10px;
 }
-.input:focus {
-    box-shadow: none;
+.password-show-icon{
+    display:none;
 }
-.email-position {
-  background-color: white;
-  position: absolute;
-  top: 5px;
-  transition: .5s ease;
-  left: 12px !important;
-  color: #737373;
+#password{
+    padding:6px 30px 6px 10px !important;
 }
-#floatingInput{
-  height:40px;
-  padding:5px !important;
-  color:#737373;
-}
-
 .login-btn {
-  /*background-color:red !important;*/
-  padding: 10px 100px;
-  border-radius: 25px;
-  color: white;
-  font-weight: 500;
-  display: block !important;
+    padding: 10px 100px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    display: block !important;
 }
 .login-btn:hover{
   color:white;
 }
-
-.form-select{
-  color:#737373;
-  margin-bottom:20px;
-}
-
 
 .sign-up, .forgot-password {
   text-align: center;
@@ -61,20 +44,6 @@
 }
 .sign-up{
   margin:25px 0;
-}
-.second-container,.first-container{
-  width: 50%;
-}
-.first-container{
-  margin-right: 30px;
-}
-@media only screen and (max-width:768px) {
-  .second-container,.first-container{
-    width: 100%;
-  }
-  .inner-container{
-    display: block;
-  }
 }
 /* login section starty*/
 .header-section {
@@ -93,10 +62,6 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 50px 80px;
 }
-.logo-imemail {
-    display: flex;
-    justify-content: center;
-}
 .login-text{
   text-align:center;
   color:#CD0E16;
@@ -108,16 +73,9 @@
   justify-content:center;
   margin-top:30px;
 }
-#email-validation,#password-validation{
-    color:red;
-    font-size:12px;
-}
 .logo-image{
   display: flex;
   justify-content: center;
-}
-.error{
-    color:red;
 }
 .border-line{
     border:1px solid red;

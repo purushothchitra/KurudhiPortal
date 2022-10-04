@@ -1,33 +1,37 @@
 ﻿$(document).ready(function () {
-    $("#task-form").validate({
+    $("#signup-form").validate({
         rules: {
-            fname: {
-                required: true
-            },
-            lname: {
-                required: true,
-            },
-            email: {
-                required: true,
-                email: true
+            username: {
+                required:true,
             },
             password: {
                 required: true,
                 minlength: 8
             },
-            age: {
+            firstname: {
                 required: true
             },
-            mobilenumber: {
-                required: true,
-            },
-            district: {
+            lastname: {
                 required: true,
             },
             gender: {
                 required: true,
             },
             bloodgroup: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            age: {
+                required: true
+            },
+            mobilenumber: {
+                required: true,
+                minlength:10
+            },
+            district: {
                 required: true,
             },
             state: {
@@ -38,34 +42,38 @@
             }
         },
         messages: {
-            fname: {
-                required: "Please Fill The Name"
+            username: {
+                required: "Please Enter User Name"
             },
-            lname: {
-                required: "Please Fill The lastname"
+            firstname: {
+                required: "Please Enter First Name"
+            },
+            lastname: {
+                required: "Please Enter Last Name"
             },
             email: {
                 required: "Please Enter Email",
                 email: "Please Enter Correct Email"
             },
-            required: {
+            password: {
                 required: "Please Enter Password",
                 minlength: "Please Enter maximum 8 Characters"
             },
             age: {
-                required: "Please Fill The Age"
+                required: "Please Enter Age"
             },
             bloodgroup: {
                 required: "Please Enter Blood Group"
             },
             mobilenumber: {
-                required: "Please Fill The Contact",
+                required: "Please Enter The Contact",
+                minlength:"Please Enter Valid Phone Number"
             },
             district: {
-                required: "please Select district"
+                required: "Please Select district"
             },
             gender: {
-                required: "please select Gender"
+                required: "Please Select Gender"
             },
             country: {
                 required: "Please Select Country"
@@ -82,12 +90,14 @@
         }
     });
     $(".signup-btn").click(function () {
-        $("#task-form").validate();
-        if ($("#task-form").valid()) {
+        debugger;
+        $("#signup-form").validate();
+        if ($("#signup-form").valid()) {
             let userDetails = {
-                fname: $("#fname").val(),
+                username: $("#username").val(),
+                firstname: $("#firstname").val(),
                 country: $("#country").val(),
-                lname: $("#lname").val(),
+                lastname: $("#lastname").val(),
                 state: $("#state").val(),
                 gender: $("#gender").val(),
                 district: $("#district").val(),
@@ -99,7 +109,7 @@
             }
 
             $.ajax({
-                url: './User/SearchDonors',
+                url: './Login/Register',
                 type: 'GET',
                 data: userDetails,
                 success: function (data) {

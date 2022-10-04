@@ -21,6 +21,8 @@
 .signup-btn{
     font-weight:500;
     color:white;
+    padding: 10px 60px;
+    border-radius: 25px;
 }
 .signup-btn:hover{
     color:white;

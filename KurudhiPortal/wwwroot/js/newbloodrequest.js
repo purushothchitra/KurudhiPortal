@@ -1,103 +1,111 @@
 ﻿$(document).ready(function () {
-    $("#task-form").validate({
+    $("#request-form").validate({
         rules: {
-            name: {
+            patientname: {
                 required: true
-            },
-            duedate: {
-                required: true,
             },
             admissionid: {
                 required: true,
             },
-            atname: {
-                required: true,
-            },
             age: {
-                required: true
-            },
-            contact: {
-                required: true,
-            },
-            bloodrequirment: {
-                required: true,
-            },
-            hosname: {
-                required: true,
-            },
-            hosaddress: {
-                required: true
-            },
-            bdunit: {
-                required: true
-            },
-            district: {
                 required: true,
             },
             gender: {
                 required: true,
             },
+            bloodtype: {
+                required: true,
+            },
             bloodgroup: {
                 required: true,
             },
-            state: {
-                required: true,
+            bloodunit: {
+                required: true
             },
             medicalstatus: {
                 required: true,
             },
+            duedate: {
+                required: true,
+            },
+            attendername: {
+                required: true,
+            },
+            attendercontact: {
+                required: true,
+                minlength:8
+            },
+            hospitalname: {
+                required: true,
+            },
+            hospitaladdress: {
+                required: true,
+            },
             country: {
-                required: true
-            }
+                required: true,
+            },
+            state: {
+                required:true,
+            },
+            district: {
+                required: true,
+            },
+            location: {
+                required: true,
+            },
         },
         messages: {
-            name: {
-                required: "Please Fill The Name"
-            },
-            duedate: {
-                required: "Please Fill The DueDate"
+            patientname: {
+                required: "Please Enter The patientName"
             },
             admissionid: {
-                required: "Please Fill The Admission Id",
-            },
-            atname: {
-                required: "Please Fill The Attender Name",
+                required: "Please Enter Admission Id",
             },
             age: {
-                required: "Please Fill The Age"
-            },
-            contact: {
-                required: "Please Fill The Contact",
-            },
-            bloodrequirment: {
-                required: "Please fill the type",
-            },
-            hosname: {
-                required: "Plese Enter Hospital Name"
-            },
-            hosaddress: {
-                required: "please Enter Hospital Address"
-            },
-            bdunit: {
-                required: "Please Enter Blood Unit"
-            },
-            district: {
-                required: "please Select district"
+                required: "Please Enter Age"
             },
             gender: {
-                required: "please select Gender"
+                required: "Please Select Gender"
+            },
+            bloodtype: {
+                required: "Please Select the bloodtype",
             },
             bloodgroup: {
-                required: "please select Blood Group"
+                required: "Please Select Blood Group"
             },
-            country: {
-                required: "Please Select Country"
-            },
-            state: {
-                required: "Please Select State"
+            bloodunit: {
+                required: "Please Enter Blood Unit"
             },
             medicalstatus: {
-                required: "please Select MedicalStatus"
+                required: "Please Select MedicalStatus"
+            },
+            duedate: {
+                required: "Please Enter DueDate"
+            },
+            attendername: {
+                required: "Please Enter Attender Name",
+            },
+            attendercontact: {
+                required: "Please Enter Contact",
+                minlength:"Please Enter Min 8 Character"
+            },
+            hospitalname: {
+                required: "Plese Enter Hospital Name"
+            },
+            hospitaladdress: {
+                required: "please Enter Hospital Address"
+            },
+            country: {
+                required: "Please Select Country",
+            },
+            state: {
+                required: "Please Select State",
+            },
+            district: {
+                required: "Please Select District"
+            },
+            location: {
+                required: "Please Select Location"
             }
         },
         highlight: function (element) {
@@ -105,6 +113,44 @@
         },
         unhighlight: function (element) {
             $(element).removeClass('border-line');
+        }
+    });
+    $(".request-btn").click(function () {
+        $("#task-form").validate();
+        if ($("#task-form").valid()) {
+            let newBloodRequest = {
+                patientame: $("#name").val(),
+                duedate: $("#duedate").val(),
+                admissionid: $("#admissionid").val(),
+                attendername: $("#atname").val(),
+                age: $("#age").val(),
+                attendercontact: $("#contact").val(),
+                bloodtype: $("input[type=radio]:checked").val(),
+                hospitalname: $("#hosname").val(),
+                gender: $("#gender").val(),
+                hospitaladdress: $("#hosaddress").val(),
+                bloodgroup: $("#bloodgroup").val(),
+                country: $("#country").val(),
+                bloodunit: $("#bdunit").val(),
+                location: $("#location").val(),
+                medicalstatus: $("#medicalstatus").val(),
+                state: $("#state").val(),
+                district: $("#district").val(),
+            }
+            $.ajax({
+                url: './Dashboard/MyDashBoard',
+                type: 'GET',
+                data: newBloodRequest,
+                success: function (data) {
+                    debugger;
+                    if (data.status == "success") {
+                        window.location = "/Request/User"
+                    }
+                },
+                error: function (textStatus, errorThrown) {
+                    console.log('Error in ajax call');
+                }
+            });
         }
     });
 });

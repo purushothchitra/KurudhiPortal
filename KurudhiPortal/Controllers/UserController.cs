@@ -8,24 +8,27 @@ namespace KurudhiPortal.Controllers
     {
         public new IActionResult User( )
         {
-            return View();
+           return View();
         }
-        public IActionResult _MyProfile()
+
+        public IActionResult SearchDonors()
         {
             return View();
         }
-        public IActionResult SearchDonors(UserViewModel userDetails)
-        {
-            
-            return Json(new { status = "success", ex = "Model recieved" });
-        }
+
         public IActionResult Logout()
         {
             return View();
         }
         public IActionResult Testing()
         {
+
             return View();
         }
+        public IActionResult MyProfile()
+        {
+            return View();
+        }
+
     }
 }

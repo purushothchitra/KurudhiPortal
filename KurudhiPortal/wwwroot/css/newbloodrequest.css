@@ -20,7 +20,7 @@
     display:flex !important;
 }
 .heading-text{
-    margin:0 auto !important;
+    margin:0 25% !important;
 }
 .back-btn {
     padding: 10px 50px;
@@ -64,14 +64,22 @@ input[type="radio"]{
 .form-group div{
     position:relative;
 }
+.request-input-container{
+    margin-bottom:10px;
+}
+.back-navigation{
+    color:white;
+    font-size:16px;
+}
 .radio-label {
     position: relative;
     top: -15px;
 }
-.radio-group{
-    display:flex;
-    justify-content:space-around;
-    position:relative;
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    border: 1px solid #CED4DA;
 }
 #bloodrequirment-error{
     position:absolute;
@@ -83,4 +91,9 @@ input[type="radio"]{
 }
 .border-line{
     border:1px solid red;
+}
+@media only screen and (max-width:768px) {
+    request-input-container {
+        margin-bottom:0;
+    }
 }

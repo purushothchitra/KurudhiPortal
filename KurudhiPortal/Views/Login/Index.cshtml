@@ -29,19 +29,15 @@
                               <h5 class="login-text">LogIn</h5>
                           </div>
                         <form class="login-form">
-                        <div class="form-group email-container mb-4">
-                            <input type="email" class="form-control input" id="email" name="email"  aria-describedby="emailHelp" placeholder="" tabindex="1">
-                            <small id="email-validation"></small>
-                            <div class="email-position">
-                                <span class="">Email</span>
-                            </div>
+                        <div class="input-container form-group mb-4">
+                            <input type="email" class="inputText form-control" id="email" name="email" placeholder="" tabindex="1">
+                            <label class="floating-label">Email</label>
                         </div>
-                        <div class="form-group email-container">
-                            <input type="password" class="form-control input" id="password" name="password"  aria-describedby="emailHelp" placeholder="" tabindex="2">
-                            <small id="password-validation"></small>
-                            <div class="email-position">
-                                <span class="">Password</span>
-                            </div>
+                        <div class="input-container form-group">
+                            <input type="password" class="inputText form-control" id="password" name="password" placeholder="" tabindex="2">
+                            <i class="bi bi-eye-slash password-hide-icon"></i>
+                            <i class="bi bi-eye password-show-icon"></i>
+                            <label class="floating-label">Password</label>
                         </div>
                         <div class="login-box">
                             <button class="btn login-btn" type="submit" tabindex="3">Login</button>
@@ -51,7 +47,7 @@
                             <span>Don't have an account? <a href="/Login/SignUp" tabindex="4"><b>Sign Up</b></a></span>
                         </div>
                         <div class="forgot-password">
-                            <a href="#" type="submit" tabindex="5"><b>Forgot Password</b></a>
+                            <a href="#" type="button" class="forgot-password-text" tabindex="5"><b>Forgot Password</b></a>
                         </div>
                       </div>
                   </div>
@@ -59,4 +55,5 @@
         </div>
     </div>
 </section>
+
 

@@ -20,37 +20,31 @@
     <section class="header-section">
         <div class="header">
             <div class="sign-up-logo">
-                <img src="~/images/runner.jpg" width="200" height="200"/>
+                <img src="~/images/runner.jpg" width="120" height="120"/>
             </div>
             <h2>SignUp</h2>
-            <form id="task-form">
+            <form id="signup-form">
                 <div class="form-group row" id="1">
                     <div class="col-12 col-md-6 col-sm-12 input-container">
-                        <input type="text" class="form-control input-field" id="fname" name="fname" tabindex="1">
+                        <input type="text" class="form-control input-field" id="username" name="username" tabindex="1">
+                        <label class="floating-label">User Name</label>
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="password" class="form-control" id="Password" name="password" tabindex="11">
+                        <label class="floating-label">Password</label>
+                    </div>                   
+                </div> 
+                <div class="form-group row task" id="12">
+                    <div class="col-12 col-md-6 col-sm-12 input-container">
+                        <input type="text" class="form-control input-field" id="firstname" name="firstname" tabindex="1">
                         <label class="floating-label">First Name</label>
                     </div>
                     <div class="col-12 col-md-6 col-sm-12">
-                        <select class="form-select" name="country" id="country" tabindex="2">
-                            <option value="">Country</option>
-                            <option value="India">India</option>
-                        </select>
-                    </div>                   
-                </div> 
-                <div class="form-group row task" id="12">
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <input type="text" class="form-control" id="lname" name="lname" tabindex="3">
+                        <input type="text" class="form-control" id="lastname" name="lastname" tabindex="3">
+                        <label class="floating-label">Last Name</label>
                     </div>
-                    <div class="col-12 col-md-6 col-sm-12">
-                         <select class="form-select" name="state" id="state" tabindex="5">
-                            <option value="">Select State</option>
-                            <option value="TamilNadu">Tamil Nadu</option>
-                            <option value="Kerla">Kerla</option>
-                            <option value="Delhi">Delhi</option>
-                            <option value="AndraPradesh">Andra Pradesh</option>
-                          </select>
-                    </div>                   
-                </div> 
-                <div class="form-group row task" id="12">
+                </div>
+                <div class="form-group row task" id="">
                     <div class="col-12 col-md-6 col-sm-12">
                         <select class="form-select" name="gender" id="gender" tabindex="6">
                             <option value="">Gender</option>
@@ -59,6 +53,54 @@
                             <option value="Ohers">Ohers</option>
                           </select>
                     </div>
+                    <div class="col-12 col-md-6 col-sm-12" >
+                        <input type="number" class="form-control" id="age" name="age" tabindex="8">
+                        <label class="floating-label">Age</label>
+                    </div>
+                       
+                </div> 
+                <div class="form-group row task" id="12">
+                     <div class="col-12 col-md-6 col-sm-12">
+                        <select class="form-select" name="bloodgroup" id="bloodgroup" tabindex="10">
+                            <option value="">Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="b+">b+</option>
+                            <option value="b-">b-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                          </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="email" class="form-control" id="email" name="email" tabindex="9">
+                        <label class="floating-label">Email</label>
+                    </div>     
+                </div>        
+                <div class="form-group row task" id="12">
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <input type="number" class="form-control" id="mobilenumber" name="mobilenumber" tabindex="12">
+                        <label class="floating-label">Mobile Number</label>
+                    </div> 
+                    <div class="col-12 col-md-6 col-sm-12">
+                        <select class="form-select" name="country" id="country" tabindex="2">
+                            <option value="">Country</option>
+                            <option value="India">India</option>
+                        </select>
+                    </div>
+                                  
+                </div>
+                <div class="form-group row task" id="12">
+                    <div class="col-12 col-md-6 col-sm-12">
+                         <select class="form-select" name="state" id="state" tabindex="5">
+                            <option value="">Select State</option>
+                            <option value="TamilNadu">Tamil Nadu</option>
+                            <option value="Kerla">Kerla</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="AndraPradesh">Andra Pradesh</option>
+                          </select>
+                    </div>    
                     <div class="col-12 col-md-6 col-sm-12 div-container">
                         <select class="form-select" name="district" id="district" tabindex="7">
                             <option value="">District</option>
@@ -77,40 +119,10 @@
                             <option value="Madurai">Madurai</option>
                           </select>
                     </div>                    
-                </div> 
-                <div class="form-group row task" id="">
-                    <div class="col-12 col-md-6 col-sm-12" >
-                        <input type="number" class="form-control" id="age" name="age" tabindex="8">
-                    </div>
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <input type="email" class="form-control" id="email" name="email" tabindex="9">
-                    </div>                    
-                </div> 
-                <div class="form-group row task" id="">
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <select class="form-select" name="bloodgroup" id="bloodgroup" tabindex="10">
-                            <option value="">Blood Group</option>
-                            <option value="A+">A+</option>
-                            <option value="A-">A-</option>
-                            <option value="b+">b+</option>
-                            <option value="b-">b-</option>
-                            <option value="AB+">AB+</option>
-                            <option value="AB-">AB-</option>
-                            <option value="O+">O+</option>
-                            <option value="O-">O-</option>
-                          </select>
-                    </div>
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <input type="password" class="form-control" id="Password" name="password" tabindex="11">
-                    </div>                    
-                </div> 
-                <div class="form-group row task" id="12">
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <input type="number" class="form-control" id="mobilenumber" name="mobilenumber" tabindex="12">
-                    </div>                    
                 </div>
+              
                 <div class="sign-up">
-                    <button type="submit" class="btn signup-btn" tabindex="13">Confirm Request</button>
+                    <button type="submit" class="btn signup-btn" tabindex="13">Sign Up</button>
                 </div>
             </form>
         </div>

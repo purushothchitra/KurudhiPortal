@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using KurudhiPortal.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace KurudhiPortal.Controllers
 {
@@ -8,9 +10,10 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
-        public IActionResult BloodRequest()
+        public IActionResult BloodRequest(BloodRequestViewModel newBloodRequest)
         {
-            return View();
+            //return View();
+            return Json(new { status = "success", ex = "Model recieved" });
         }
         public IActionResult NewBloodRequest()
         {

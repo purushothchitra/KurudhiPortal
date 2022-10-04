@@ -7,12 +7,6 @@ html {
     font-size: 16px;
   }
 }
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 .btn {
     background-color: #CD0E16 !important;
 }
@@ -128,7 +122,7 @@ html {
     font-weight:500;
 }
 .active-class{
-    border-bottom:3px solid red;
+    border-bottom:3px solid #CD0E16;
 }
 .nav-link {
     margin: 0 10px;
@@ -137,5 +131,25 @@ html {
 .nav-link:hover{
     background-color:#CD0E16;
     color:white !important;
+}
+.error{
+    color:red;
+}
+@media only screen and (max-width:768px){
+    .side-nav-section{
+        width:70px;
+    }
+    .push-arrow{
+        display:block;
+    }
+    .cancel-icon-container{
+        display:none;
+    }
+    .image-container{
+        display:none;
+    }
+    .nav-list{
+        display:none;
+    }
 }
 /* side navbar end */

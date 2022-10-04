@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using KurudhiPortal.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 namespace KurudhiPortal.Controllers
 {
     public class DashboardController : Controller

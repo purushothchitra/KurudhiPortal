@@ -20,73 +20,55 @@
     <section>
         <div class="form-header">
             <div>
-                 <button class="btn back-btn">Back</button>
+                 <button class="btn back-btn"><i class="bi bi-arrow-left back-navigation"></i> Back</button>
             </div>
             <div class="heading-text">
                 <h2 class="heading-blood-request">New Blood Request</h2>
             </div>
         </div>
         <div class="container-fluid">
-                <form id="task-form">
-            <div class="form-group row task mb-4" id="1">
-                <div class="col col-md-6">
-                    <input type="text" class="form-control" name="name" tabindex="1">
+                <form id="request-form">
+            <div class="form-group row request-input-container" id="1">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <input type="text" class="form-control" name="patientname" id="name" tabindex="1">
+                    <label>Patient Name</label>
                 </div>
-                <div class="col col-md-6">
-                    <input type="date" class="form-control" name="duedate" tabindex="2">
-                </div>                   
+                <div class="col-12 col-sm-12 col-md-6">
+                    <input type="number" class="form-control form-control-sm" name="admissionid" id="admissionid" tabindex="3">
+                    <label>Admission Id</label>
+                </div>                  
             </div> 
-            <div class="form-group row task mb-4" id="12">
-                <div class="col col-md-6">
-                    <input type="number" class="form-control form-control-sm" name="admissionid" tabindex="3">
+            <div class="form-group row request-input-container" id="12">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <input type="number" class="form-control form-control-sm" name="age" id="age" tabindex="5">
+                    <label>Age</label>
                 </div>
-                <div class="col col-md-6">
-                    <input type="text" class="form-control form-control-sm" name="atname" tabindex="4">
-                </div>                   
-            </div> 
-            <div class="form-group row task mb-4" id="12">
-                <div class="col col-md-6">
-                    <input type="number" class="form-control form-control-sm" name="age" tabindex="5">
-                </div>
-                <div class="col col-md-6 div-container">
-                    <input type="number" class="form-control form-control-sm form-input" name="contact" tabindex="6">
-                </div>                    
-            </div> 
-            <div class="form-group row task mb-4" id="12">
-                <div class="col col-md-6 radio-group">
-                    <div>
-                        <input type="radio" name="bloodrequirment" value="Blood" id="male" tabindex="7">
-                        <label for="male" class="radio-label">Blood</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="bloodrequirment" value="Plasma" id="female" tabindex="8">
-                        <label for="female" class="radio-label">Plasma</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="bloodrequirment" value="Platted" id="female" tabindex="9">
-                        <label for="female" class="radio-label">Platted</label>
-                    </div>
-                </div>
-                <div class="col col-md-6">
-                    <input type="text" class="form-control form-control-sm" name="hosname" tabindex="10">
-                </div>                    
-            </div> 
-            <div class="form-group row task mb-4" id="12">
-                <div class="col col-md-6">
-                    <select class="form-select" name="gender" tabindex="11">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <select class="form-select" name="gender"  id="gender" tabindex="11">
                         <option value="">Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Ohers">Ohers</option>
                       </select>
-                </div>
-                <div class="col col-md-6">
-                    <input type="text" class="form-control form-control-sm" name="hosaddress" tabindex="12">
-                </div>                    
+                </div>                  
             </div> 
-            <div class="form-group row task mb-4" id="12">
-                <div class="col col-md-6">
-                    <select class="form-select" name="bloodgroup" tabindex="13">
+            <div class="form-group row request-input-container" id="12">
+                <div class="col-12 col-sm-12 col-md-6 mb-3 radio-group">
+                    <div>
+                        <input type="radio" name="bloodtype" value="Blood" tabindex="7">
+                        <label for="male" class="radio-label">Blood</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="bloodtype" value="Plasma" tabindex="8">
+                        <label for="female" class="radio-label">Plasma</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="bloodtype" value="Platelet" tabindex="9">
+                        <label for="female" class="radio-label">Platelet</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <select class="form-select" name="bloodgroup" id="bloodgroup" tabindex="13">
                         <option value="">Blood Group</option>
                         <option value="A+">A+</option>
                         <option value="A-">A-</option>
@@ -98,38 +80,66 @@
                         <option value="O-">O-</option>
                       </select>
                 </div>
-                <div class="col col-md-6">
-                    <select class="form-select" name="country" tabindex="14">
-                        <option value="">Country</option>
-                        <option value="India">India</option>
-                      </select>
-                </div>                    
+                                    
             </div> 
-            <div class="form-group row task mb-4" id="12">
-                <div class="col col-md-6">
-                    <input type="number" class="form-control form-control-sm checkbox" name="bdunit" tabindex="16">
+            <div class="form-group row request-input-container" id="12">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <input type="number" class="form-control form-control-sm checkbox" id="bdunit" name="bloodunit" tabindex="16">
+                    <label>Blood Unit</label>
                 </div>
-                <div class="col col-md-6">
-                    <select class="form-select" name="state" tabindex="17">
-                        <option value="">Select State</option>
-                        <option value="TamilNadu">Tamil Nadu</option>
-                        <option value="Kerla">Kerla</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="AndraPradesh">Andra Pradesh</option>
-                      </select>
-                </div>                     
-            </div>
-            <div class="form-group row task mb-4" id="12">
-                <div class="col col-md-6">
-                    <select class="form-select" name="medicalstatus" tabindex="18">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <select class="form-select" name="medicalstatus" id="medicalstatus" tabindex="18">
                         <option value="">Medical Status</option>
                         <option value="Normal">Normal</option>
                         <option value="Medium">Medium</option>
                         <option value="Emergency">Emergency</option>
                       </select>
-                </div>
+                </div>                   
+            </div> 
+            <div class="form-group row request-input-container" id="12">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <input type="date" class="form-control" name="duedate" id="duedate" tabindex="2">
+                    <label>Due Date</label>
+                </div> 
                 <div class="col col-md-6">
-                    <select class="form-select" name="district" tabindex="19">
+                    <input type="text" class="form-control form-control-sm" name="attendername" id="atname" tabindex="4">
+                    <label>Attender Name</label>
+                </div>                    
+            </div> 
+            <div class="form-group row request-input-container" id="12">
+                <div class="col-12 col-sm-12 col-md-6 div-container">
+                    <input type="number" class="form-control form-control-sm form-input" name="attendercontact" id="contact" tabindex="6">
+                    <label>Attender Contact</label>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <input type="text" class="form-control form-control-sm" name="hospitalname" id="hosname" tabindex="10">
+                    <label>Hospital Name</label>
+                </div>                  
+            </div> 
+            <div class="form-group row request-input-container" id="12">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <input type="text" class="form-control form-control-sm" name="hospitaladdress" id="hosaddress" tabindex="12">
+                    <label>Hospital Address</label>
+                </div> 
+                <div class="col col-md-6">
+                    <select class="form-select" name="country" id="country" tabindex="14">
+                        <option value="">Country</option>
+                        <option value="India">India</option>
+                      </select>
+                </div>                   
+            </div>
+            <div class="form-group row request-input-container" id="12">
+                <div class="col-12 col-md-6 col-sm-12 mb-3">
+                         <select class="form-select" name="state" id="state" tabindex="5">
+                            <option value="">Select State</option>
+                            <option value="TamilNadu">Tamil Nadu</option>
+                            <option value="Kerla">Kerla</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="AndraPradesh">Andra Pradesh</option>
+                          </select>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <select class="form-select" name="district" id="district" tabindex="19">
                         <option value="">District</option>
                         <option value="Ariyalur">Ariyalur</option>
                         <option value="Chengalpattu">Chengalpattu</option>
@@ -145,7 +155,18 @@
                         <option value="Krishnagiri">Krishnagiri</option>
                         <option value="Madurai">Madurai</option>
                       </select>
-                </div>                   
+                </div>
+            </div>
+            <div class="form-group row mb-5" id="12">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <select class="form-select" name="location" id="location" tabindex="17">
+                        <option value="">Select Location</option>
+                        <option value="Thuraipakkam">Thuraipakkam</option>
+                        <option value="Ecr">Ecr</option>
+                        <option value="Tnagar">Tnagar</option>
+                        <option value="Adyar">Adyar</option>
+                    </select>
+                </div> 
             </div>
             <div class="request-btn">
                 <button type="submit" class="btn request-btn" tabindex="20">Confirm Request</button>
