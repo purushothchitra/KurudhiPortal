@@ -1,22 +1,25 @@
 ﻿$(document).ready(function () {
     $(".login-form").validate({
         rules: {
-            email: {
+            username: {
                 required: true
             },
             password: {
                 required: true,
-                minlength: 8
             }
         },
         messages: {
-            email: {
-                required: "Please Enter Email",
+            username: {
+                required: "Please enter username or mobile number",
             },
             password: {
-                required: "Please Enter Password",
-                minlength: "please enter min 8 character"
+                required: "Please enter password",
             }
+        },
+        errorElement: "div",
+        errorPlacement: function (error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
         },
         highlight: function (element) {
             $(element).addClass('border-line');
@@ -25,13 +28,14 @@
             $(element).removeClass('border-line');
         }
     });
+
     $(".login-btn").click(function () {
-        debugger;
+      
         $(".login-form").validate();
 
         if ($(".login-form").valid()) {
             let userValidation = {
-                email: $("#email").val(),
+                email: $("#username").val(),
                 password: $("#password").val()
             }
 
