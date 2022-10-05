@@ -26,6 +26,7 @@
         }
     });
     $(".login-btn").click(function () {
+        debugger;
         $(".login-form").validate();
 
         if ($(".login-form").valid()) {
@@ -35,7 +36,7 @@
             }
 
             $.ajax({
-                url: './Login/SignIn',
+                url: '/Login/SignIn',
                 type: 'GET',
                 data: userValidation,
                 success: function (data) {
@@ -59,17 +60,5 @@
         $("input[type='text']").attr('type', 'password');
         $(this).css('display', 'none');
         $(".password-hide-icon").css("display", "inline-block");
-    })
-    $(".forgot-password-text").click(function () {
-        $.ajax({
-            url: '/DataBase/login.json',
-            type: 'GET',
-            success: function (data) {
-                alert("hellow world");
-            },
-            error: function (textStatus, errorThrown) {
-                alert("hellow");
-            }
-        });
     });
 });

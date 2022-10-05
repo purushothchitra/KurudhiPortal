@@ -16,10 +16,6 @@ namespace KurudhiPortal.Controllers
 
         public IActionResult Index()
         {
-            string path = @"c:/DataBase/login.json";
-            string readText = System.IO.File.ReadAllText(path);
-            JArray convert = JArray.Parse(readText);
-            ViewData["responsedata"] = convert;
             return View();
         }
 
@@ -32,9 +28,9 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
-        public IActionResult Register( )
+        public IActionResult Register(SignUpViewModel userDetails)
         {
-            return View();
+            return Json(new { status = "success", ex = "Model recieved" });
         }
 
         public IActionResult AboutUs()

@@ -1,4 +1,5 @@
-﻿{
+﻿@model ProfileViewModel
+@{
     ViewData["Title"] = "MyProfile";
 }
 <head>
@@ -12,96 +13,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="~/css/myprofile.css"/>
 </head>
-<body></body>
-@*<partial name="_MyProfile"/>*@
-@*<section>
+<body>
+    <section>
 	<div class="container-fluid">
 		<div class="row profile-row">
 			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-				<div class="profile-container">
-					<div>
-						<span>User Name</span>
-						<span>:</span>
-						<span>@Model.UserName</span>
-					</div>
-					<div>
-						<span>Password</span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<div>
-						<span></span>
-						<span>:</span>
-						<span></span>
-					</div>
-					<ul>
-						<li></li>
-						<li>:</li>
-						<li>FirstName:@Model.FirstName</li>
-						<li>LastName:@Model.LastName</li>
-						<li>Age:@Model.Age</li>
-						<li>Gender:@Model.Gender</li>
-						<li>Blood Group:@Model.BloodGroup</li>
-						<li>Email:@Model.Email</li>
-						<li>Mobile Number:@Model.MobileNumber</li>
-						<li>Country:@Model.Country</li>
-						<li>State:@Model.State</li>
-						<li>District:@Model.District</li>
-						<li>LastDonatedDate:@Model.LastDonatedDate</li>
-					</ul>
-				</div>
+				<partial name="_MyProfile"/>
 			</div>
 		</div>
 	</div>
-</section>*@
+</section>
+</body>
+
 

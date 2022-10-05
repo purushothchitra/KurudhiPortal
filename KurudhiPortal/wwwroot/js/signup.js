@@ -109,7 +109,7 @@
             }
 
             $.ajax({
-                url: './Login/Register',
+                url: '/Login/Register',
                 type: 'GET',
                 data: userDetails,
                 success: function (data) {

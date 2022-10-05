@@ -27,7 +27,21 @@ namespace KurudhiPortal.Controllers
         }
         public IActionResult MyProfile()
         {
-            return View();
+            ProfileViewModel profile = new ProfileViewModel();
+            profile.UserName = "Purushothaman";
+            profile.Password = "12345678";
+            profile.FirstName = "Purushoth";
+            profile.Lastname = "Venkatesan";
+            profile.Gender = "Male";
+            profile.Age = "21";
+            profile.BloodGroup = "A+";
+            profile.Email = "purushothchithra1103@gmail.com";
+            profile.MobileNumber = "7904460054";
+            profile.Country = "India";
+            profile.State = "Tamil Nadu";
+            profile.District = "Chennai";
+            profile.LastDonatedDate = "05/10/22";
+            return View(profile);
         }
 
     }

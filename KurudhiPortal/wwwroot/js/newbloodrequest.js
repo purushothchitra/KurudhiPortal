@@ -116,8 +116,9 @@
         }
     });
     $(".request-btn").click(function () {
-        $("#task-form").validate();
-        if ($("#task-form").valid()) {
+        debugger;
+        $("#request-form").validate();
+        if ($("#request-form").valid()) {
             let newBloodRequest = {
                 patientame: $("#name").val(),
                 duedate: $("#duedate").val(),
@@ -138,13 +139,13 @@
                 district: $("#district").val(),
             }
             $.ajax({
-                url: './Dashboard/MyDashBoard',
+                url: '/Request/BloodRequest',
                 type: 'GET',
                 data: newBloodRequest,
                 success: function (data) {
                     debugger;
                     if (data.status == "success") {
-                        window.location = "/Request/User"
+                        window.location = "/Request/Index"
                     }
                 },
                 error: function (textStatus, errorThrown) {
