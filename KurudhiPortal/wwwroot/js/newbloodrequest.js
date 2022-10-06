@@ -2,7 +2,9 @@
     $("#request-form").validate({
         rules: {
             patientname: {
-                required: true
+                required: true,
+                minlength: 4,
+                maxlength:25,
             },
             admissionid: {
                 required: true,
@@ -33,7 +35,7 @@
             },
             attendercontact: {
                 required: true,
-                minlength:8
+                minlength:10
             },
             hospitalname: {
                 required: true,
@@ -56,57 +58,64 @@
         },
         messages: {
             patientname: {
-                required: "Please Enter The patientName"
+                required: "Please enter  patient name",
+                minlength: "Please enter valid patient name",
+                maxlength: "Please enter correct patient name",
             },
             admissionid: {
-                required: "Please Enter Admission Id",
+                required: "Please enter admission id",
             },
             age: {
-                required: "Please Enter Age"
+                required: "please enter age"
             },
             gender: {
-                required: "Please Select Gender"
+                required: "Please select gender"
             },
             bloodtype: {
-                required: "Please Select the bloodtype",
+                required: "Please select the blood type",
             },
             bloodgroup: {
-                required: "Please Select Blood Group"
+                required: "Please select blood group"
             },
             bloodunit: {
-                required: "Please Enter Blood Unit"
+                required: "Please enter blood unit"
             },
             medicalstatus: {
-                required: "Please Select MedicalStatus"
+                required: "Please select medical status"
             },
             duedate: {
-                required: "Please Enter DueDate"
+                required: "Please enter due date"
             },
             attendername: {
-                required: "Please Enter Attender Name",
+                required: "Please enter attender name",
             },
             attendercontact: {
-                required: "Please Enter Contact",
-                minlength:"Please Enter Min 8 Character"
+                required: "Please enter attender contact",
+                minlength:"Please enter correct attender contact"
             },
             hospitalname: {
-                required: "Plese Enter Hospital Name"
+                required: "Plese enter hospital name"
             },
             hospitaladdress: {
-                required: "please Enter Hospital Address"
+                required: "Please enter hospital address"
             },
             country: {
-                required: "Please Select Country",
+                required: "Please select country",
             },
             state: {
-                required: "Please Select State",
+                required: "Please select state",
             },
             district: {
-                required: "Please Select District"
+                required: "Please select district"
             },
             location: {
-                required: "Please Select Location"
+                required: "Please select location"
             }
+        },
+        errorElement: "div",
+        errorPlacement: function (error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
         },
         highlight: function (element) {
             $(element).addClass('border-line');
@@ -120,16 +129,16 @@
         $("#request-form").validate();
         if ($("#request-form").valid()) {
             let newBloodRequest = {
-                patientame: $("#name").val(),
+                patientame: $("#patientname").val(),
                 duedate: $("#duedate").val(),
                 admissionid: $("#admissionid").val(),
-                attendername: $("#atname").val(),
+                attendername: $("#attendername").val(),
                 age: $("#age").val(),
-                attendercontact: $("#contact").val(),
+                attendercontact: $("#attendercontact").val(),
                 bloodtype: $("input[type=radio]:checked").val(),
-                hospitalname: $("#hosname").val(),
+                hospitalname: $("#hospitalname").val(),
                 gender: $("#gender").val(),
-                hospitaladdress: $("#hosaddress").val(),
+                hospitaladdress: $("#hospitaladdress").val(),
                 bloodgroup: $("#bloodgroup").val(),
                 country: $("#country").val(),
                 bloodunit: $("#bdunit").val(),

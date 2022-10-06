@@ -127,8 +127,9 @@
 
 .error {
     color: red;
-    position: absolute !important;
-    top: 35px !important;
+}
+.border-line {
+    border: 1px solid red;
 }
 @media only screen and (max-width:768px){
     .side-nav-section{

@@ -7,10 +7,6 @@
 .header-section {
   padding-top:40px;
 }
-.login-header-container{
-  display:flex;
-  justify-content:center;
-}
 .sign-up{
     display:flex;
     justify-content:center;

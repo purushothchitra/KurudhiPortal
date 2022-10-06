@@ -31,27 +31,27 @@
             <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" name="patientname" id="name" placeholder="name@example.com">
-                      <label for="name">PatientName</label>
+                      <input type="text" class="form-control" name="patientname" id="patientname" placeholder="Patient Name" tabindex="1">
+                      <label for="name">Patient Name</label>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control" name="admissionid" id="admissionid" placeholder="name@example.com">
-                      <label for="admissionid">AdmissionId</label>
+                      <input type="number" class="form-control" name="admissionid" id="admissionid" placeholder="Admission Id" tabindex="2">
+                      <label for="admissionid">Admission Id</label>
                     </div>
                 </div>                  
             </div> 
             <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control" name="age" id="age" placeholder="name@example.com">
+                      <input type="number" class="form-control" name="age" id="age" placeholder="age" tabindex="3">
                       <label for="age">Age</label>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                       <div class="form-floating">
-                          <select class="form-select" name="gender"  id="gender" aria-label="Floating label select example">
+                          <select class="form-select" name="gender"  id="gender" aria-label="Floating label select example" tabindex="4">
                            <option value="">Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -62,23 +62,26 @@
                 </div>                  
             </div> 
             <div class="form-group row request-input-container">
-                <div class="col-12 col-sm-12 col-md-6 mb-3 radio-group">
-                    <div>
-                        <input type="radio" name="bloodtype" value="Blood" tabindex="7">
-                        <label for="male" class="radio-label">Blood</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="bloodtype" value="Plasma" tabindex="8">
-                        <label for="female" class="radio-label">Plasma</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="bloodtype" value="Platelet" tabindex="9">
-                        <label for="female" class="radio-label">Platelet</label>
+                <div class="col-12 col-sm-12 col-md-6 mb-3" >
+                    <div class="radio-container">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" id="radio1" name="bloodtype" value="Blood" placeholder="blood" tabindex="5">
+                          <label class="form-check-label" for="radio1">Blood</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" id="radio2" name="bloodtype" placeholder="Plasma" value="Plasma" tabindex="6">
+                          <label class="form-check-label" for="radio2">Plasma</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" id="radio3" name="bloodtype" value="Platelet" placeholder="Platelet" tabindex="7">
+                          <label class="form-check-label" for="radio3">Platelet</label>
+                        </div>
+                        <label class="radio-label">Blood Type</label>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                        <div class="form-floating">
-                          <select class="form-select" name="bloodgroup" id="bloodgroup" aria-label="Floating label select example">
+                          <select class="form-select" name="bloodgroup" id="bloodgroup" aria-label="Floating label select example" tabindex="8">
                             <option value="">Blood Group</option>
                         <option value="A+">A+</option>
                         <option value="A-">A-</option>
@@ -89,7 +92,7 @@
                         <option value="O+">O+</option>
                         <option value="O-">O-</option>
                           </select>
-                          <label for="bloodgroup">BloodGroup</label>
+                          <label for="bloodgroup">Blood Group</label>
                         </div>
                 </div>
                                     
@@ -97,46 +100,46 @@
             <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control" id="bdunit" name="bloodunit" placeholder="name@example.com">
-                      <label for="bdunit">BloodUnit</label>
+                      <input type="number" class="form-control" id="bdunit" name="bloodunit" placeholder="blood unit" tabindex="9">
+                      <label for="bdunit">Blood Unit</label>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                       <div class="form-floating">
-                          <select class="form-select" name="medicalstatus" id="medicalstatus" aria-label="Floating label select example">
+                          <select class="form-select" name="medicalstatus" id="medicalstatus" aria-label="Floating label select example" tabindex="10">
                             <option value="">Medical Status</option>
                         <option value="Normal">Normal</option>
                         <option value="Medium">Medium</option>
                         <option value="Emergency">Emergency</option>
                           </select>
-                          <label for="medicalstatus">MedicalStatus</label>
+                          <label for="medicalstatus">Medical Status</label>
                         </div>
                 </div>                   
             </div> 
             <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="date" class="form-control" name="duedate" id="duedate" placeholder="name@example.com">
-                      <label for="floatingInput">Email address</label>
+                      <input type="date" class="form-control" name="duedate" id="duedate" placeholder="due date" tabindex="11">
+                      <label for="floatingInput">Due Date</label>
                     </div>
                 </div> 
                 <div class="col col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" name="attendername" id="atname" placeholder="name@example.com">
-                      <label for="atname">AttenderName</label>
+                      <input type="text" class="form-control" name="attendername" id="attendername" placeholder="attender name" tabindex="12">
+                      <label for="atname">Attender Name</label>
                     </div>
                 </div>                    
             </div> 
             <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6 div-container">
                     <div class="form-floating mb-3">
-                      <input type="number" class="form-control" name="attendercontact" id="contact" placeholder="name@example.com">
-                      <label for="contact">AttenderContact</label>
+                      <input type="number" class="form-control" name="attendercontact" id="attendercontact" placeholder="Attender Contact" tabindex="13">
+                      <label for="contact">Attender Contact</label>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" name="hospitalname" id="hosname" placeholder="name@example.com">
+                      <input type="text" class="form-control" name="hospitalname" id="hospitalname" placeholder="hospital name" tabindex="14">
                       <label for="hospitalname">HospitalName</label>
                     </div>
                 </div>                  
@@ -144,13 +147,13 @@
             <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" name="hospitaladdress" id="hosaddress" placeholder="name@example.com">
-                      <label for="hosaddress">HospitalAddress</label>
+                      <input type="text" class="form-control" name="hospitaladdress" id="hospitaladdress" placeholder="hospital address" tabindex="15">
+                      <label for="hosaddress">Hospital Address</label>
                     </div>
                 </div> 
                 <div class="col col-md-6">
                       <div class="form-floating">
-                          <select class="form-select" name="country" id="country" aria-label="Floating label select example">
+                          <select class="form-select" name="country" id="country" aria-label="Floating label select example" tabindex="16">
                               <option value="">Country</option>
                               <option value="India">India</option>
                           </select>
@@ -161,7 +164,7 @@
             <div class="form-group row request-input-container">
                 <div class="col-12 col-md-6 col-sm-12 mb-3">
                           <div class="form-floating">
-                          <select class="form-select" name="state" id="state" aria-label="Floating label select example">
+                          <select class="form-select" name="state" id="state" aria-label="Floating label select example" tabindex="17">
                               <option value="">Select State</option>
                             <option value="TamilNadu">Tamil Nadu</option>
                             <option value="Kerla">Kerla</option>
@@ -173,7 +176,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                       <div class="form-floating">
-                          <select class="form-select" name="district" id="district" aria-label="Floating label select example">
+                          <select class="form-select" name="district" id="district" aria-label="Floating label select example" tabindex="18">
                                 <option value="">District</option>
                                 <option value="Ariyalur">Ariyalur</option>
                                 <option value="Chengalpattu">Chengalpattu</option>
@@ -196,7 +199,7 @@
             <div class="form-group row mb-5" id="12">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating">
-                          <select class="form-select" name="location" id="location" aria-label="Floating label select example">
+                          <select class="form-select" name="location" id="location" aria-label="Floating label select example" tabindex="19">
                                 <option value="">Select Location</option>
                                 <option value="Thuraipakkam">Thuraipakkam</option>
                                 <option value="Ecr">Ecr</option>

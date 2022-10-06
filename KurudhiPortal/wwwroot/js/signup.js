@@ -2,7 +2,9 @@
     $("#signup-form").validate({
         rules: {
             username: {
-                required:true,
+                required: true,
+                minlength: 8,
+                maxlength:25,
             },
             password: {
                 required: true,
@@ -43,50 +45,57 @@
         },
         messages: {
             username: {
-                required: "Please Enter User Name"
+                required: "Please enter user name",
+                minlength: "Please enter valid user name",
+                maxlength: "Please enter correct name",
             },
             firstname: {
-                required: "Please Enter First Name"
+                required: "Please enter first name"
             },
             lastname: {
-                required: "Please Enter Last Name"
+                required: "Please enter last name"
             },
             email: {
-                required: "Please Enter Email",
-                email: "Please Enter Correct Email"
+                required: "Please enter email",
+                email: "Please enter correct email"
             },
             password: {
-                required: "Please Enter Password",
-                minlength: "Please Enter maximum 8 Characters"
+                required: "Please enter password",
+                minlength: "Please enter valid password"
             },
             age: {
-                required: "Please Enter Age"
+                required: "Please enter age"
             },
             bloodgroup: {
-                required: "Please Enter Blood Group"
+                required: "Please enter blood group"
             },
             mobilenumber: {
-                required: "Please Enter The Contact",
-                minlength:"Please Enter Valid Phone Number"
+                required: "Please enter the mobile number",
+                minlength:"Please enter valid mobile number"
             },
             district: {
-                required: "Please Select district"
+                required: "Please select district"
             },
             gender: {
-                required: "Please Select Gender"
+                required: "Please select gender"
             },
             country: {
-                required: "Please Select Country"
+                required: "Please select country"
             },
             state: {
-                required: "Please Select State"
+                required: "Please select state"
             },
-            highlight: function (element) {
-                $(element).addClass('border-line');
-            },
-            unhighlight: function (element) {
-                $(element).removeClass('border-line');
-            }
+        },
+        errorElement: "div",
+        errorPlacement: function (error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
+        },
+        highlight: function (element) {
+            $(element).addClass('border-line');
+        },
+        unhighlight: function (element) {
+            $(element).removeClass('border-line');
         }
     });
     $(".signup-btn").click(function () {

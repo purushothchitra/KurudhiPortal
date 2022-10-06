@@ -22,54 +22,40 @@
             <div class="sign-up-logo">
                 <img src="~/images/runner.jpg" width="120" height="120"/>
             </div>
-            <h2>SignUp</h2>
+            <h2>Sign Up</h2>
             <form id="signup-form">
-                <div class="form-group row">
+                <div class="form-group row task">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="username" name="username" placeholder="username">
-                      <label for="username">UserName</label>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="user name" tabindex="1">
+                      <label for="username">User Name</label>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="password" name="password" placeholder="username">
-                      <label for="Password">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="password" tabindex="2">
+                      <label for="password">Password</label>
                     </div>
                 </div>                  
             </div>
-               @* <div class="form-group row">
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="username" name="username" placeholder="username">
-                      <label for="username">UserName</label>
-                    </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-sm-12">
-                        <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="Password" name="Password" placeholder="username">
-                      <label for="Password">Password</label>
-                    </div>
-                    </div>                   
-                </div> *@
                 <div class="form-group row task">
                     <div class="col-12 col-md-6 col-sm-12">
                         <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="username">
-                      <label for="firstname">FirstName</label>
+                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="first name" tabindex="3">
+                      <label for="firstname">First Name</label>
                     </div>
                     </div>
                     <div class="col-12 col-md-6 col-sm-12">
                         <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="username">
-                      <label for="lastname">LastName</label>
+                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="last name" tabindex="4">
+                      <label for="lastname">Last Name</label>
                     </div>
                     </div>
                 </div>
                 <div class="form-group row task">
                     <div class="col-12 col-md-6 col-sm-12">
                           <div class="form-floating mb-3">
-                              <select class="form-select" name="gender" id="gender" aria-label="Floating label select example">
+                              <select class="form-select" name="gender" id="gender" aria-label="Floating label select example" tabindex="5">
                                     <option value="">Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
@@ -80,7 +66,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-sm-12" >
                         <div class="form-floating mb-3">
-                      <input type="number" class="form-control" id="age" name="age" placeholder="username">
+                      <input type="number" class="form-control" id="age" name="age" placeholder="age" tabindex="6">
                       <label for="age">Age</label>
                     </div>
                     </div>
@@ -89,7 +75,7 @@
                 <div class="form-group row task">
                      <div class="col-12 col-md-6 col-sm-12">
                           <div class="form-floating mb-3">
-                              <select class="form-select" name="bloodgroup" id="bloodgroup" aria-label="Floating label select example">
+                              <select class="form-select" name="bloodgroup" id="bloodgroup" aria-label="Floating label select example" tabindex="7">
                                     <option value="">Blood Group</option>
                                     <option value="A+">A+</option>
                                     <option value="A-">A-</option>
@@ -100,12 +86,12 @@
                                     <option value="O+">O+</option>
                                     <option value="O-">O-</option>
                               </select>
-                              <label for="bloodgroup">Select BloodGroup</label>
+                              <label for="bloodgroup">Select Blood Group</label>
                             </div>
                     </div>
                     <div class="col-12 col-md-6 col-sm-12">
                         <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="username">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="email" tabindex="8">
                       <label for="email">Email</label>
                     </div>
                     </div>     
@@ -113,13 +99,13 @@
                 <div class="form-group row task">
                     <div class="col-12 col-md-6 col-sm-12">
                         <div class="form-floating mb-3">
-                      <input type="number" class="form-control" id="mobilenumber" name="mobilenumber" placeholder="username">
-                      <label for="mobilenumber">MobileNumber</label>
+                      <input type="number" class="form-control" id="mobilenumber" name="mobilenumber" placeholder="mobile number" tabindex="9">
+                      <label for="mobilenumber">Mobile Number</label>
                     </div>
                     </div> 
                     <div class="col-12 col-md-6 col-sm-12">
                         <div class="form-floating mb-3">
-                              <select class="form-select" name="country" id="country" aria-label="Floating label select example">
+                              <select class="form-select" name="country" id="country" aria-label="Floating label select example" tabindex="10">
                                   <option value="">Country</option>
                                   <option value="India">India</option>
                               </select>
@@ -131,7 +117,7 @@
                 <div class="form-group row task">
                     <div class="col-12 col-md-6 col-sm-12">
                           <div class="form-floating mb-3">
-                              <select class="form-select" name="state" id="state" aria-label="Floating label select example">
+                              <select class="form-select" name="state" id="state" aria-label="Floating label select example" tabindex="11">
                                   <option value="">Select State</option>
                                 <option value="TamilNadu">Tamil Nadu</option>
                                 <option value="Kerla">Kerla</option>
@@ -143,7 +129,7 @@
                     </div>    
                     <div class="col-12 col-md-6 col-sm-12 div-container">
                           <div class="form-floating">
-                              <select class="form-select" name="district" id="district" aria-label="Floating label select example">
+                              <select class="form-select" name="district" id="district" aria-label="Floating label select example" tabindex="12">
                                     <option value="">District</option>
                                     <option value="Ariyalur">Ariyalur</option>
                                     <option value="Chengalpattu">Chengalpattu</option>
@@ -163,7 +149,6 @@
                             </div>
                     </div>                    
                 </div>
-              
                 <div class="sign-up">
                     <button type="submit" class="btn signup-btn" tabindex="13">Sign Up</button>
                 </div>

@@ -11,7 +11,7 @@
 }
 .password-hide-icon,.password-show-icon{
     position:absolute !important;
-    top:10px;
+    top:20px;
     right:10px;
 }
 .password-show-icon{
@@ -76,8 +76,5 @@
 .logo-image{
   display: flex;
   justify-content: center;
-}
-.border-line{
-    border:1px solid red;
 }
 /*login section end*/

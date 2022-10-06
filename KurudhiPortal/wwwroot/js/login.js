@@ -35,7 +35,7 @@
 
         if ($(".login-form").valid()) {
             let userValidation = {
-                email: $("#username").val(),
+                username: $("#username").val(),
                 password: $("#password").val()
             }
 
