@@ -26,23 +26,25 @@
                                 <img src="~/images/NTK_KURUDHI_Logo.jpg" alt="KURUDHI LOGO" height="180" width="180">
                           </div>
                           <div>
-                              <h5 class="login-text">LogIn</h5>
+                              <h5 class="login-text">Sign In</h5>
                           </div>
+                          
                         <form class="login-form">
-                        <div class="input-container form-group mb-4">
-                            <input type="email" class="inputText form-control" id="email" name="email" placeholder="" tabindex="1">
-                            <label class="floating-label">Email</label>
-                        </div>
-                        <div class="input-container form-group">
-                            <input type="password" class="inputText form-control" id="password" name="password" placeholder="" tabindex="2">
-                            <i class="bi bi-eye-slash password-hide-icon"></i>
-                            <i class="bi bi-eye password-show-icon"></i>
-                            <label class="floating-label">Password</label>
-                        </div>
-                        <div class="login-box">
-                            <button class="btn login-btn" type="submit" tabindex="3">Login</button>
-                        </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="name@example.com">
+                                <label for="floatingInput">User Name</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                <i class="bi bi-eye-slash password-hide-icon"></i>
+                                <i class="bi bi-eye password-show-icon"></i>
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="login-box">
+                                <button class="btn login-btn" type="submit" tabindex="3">Login</button>
+                            </div>
                         </form>
+                         
                         <div class="sign-up">
                             <span>Don't have an account? <a href="/Login/SignUp" tabindex="4"><b>Sign Up</b></a></span>
                         </div>
