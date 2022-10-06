@@ -41,11 +41,11 @@
     border:none;
 }
 .bi-pencil{
-    position:absolute !important;
-    top:0 !important;
-    right:0 !important;
-    display:none;
+    display:inline-block;
 }
 .input-box{
     position:relative;
+}
+.plus-icon{
+    display:none;
 }

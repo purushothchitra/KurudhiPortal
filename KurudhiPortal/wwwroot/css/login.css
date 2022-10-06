@@ -11,14 +11,14 @@
 }
 .password-hide-icon,.password-show-icon{
     position:absolute !important;
-    top:20px;
+    top:23px;
     right:10px;
 }
 .password-show-icon{
     display:none;
 }
 #password{
-    padding:6px 30px 6px 10px !important;
+    padding-right: 30px!important;
 }
 .login-btn {
     padding: 10px 100px;

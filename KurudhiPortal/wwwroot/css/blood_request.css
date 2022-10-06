@@ -43,4 +43,7 @@
 .approver-content,.pending-content{
   display: none;
 }
+.plus-icon {
+    display: none;
+}
 /* admin access nav end */

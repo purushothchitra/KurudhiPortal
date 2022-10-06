@@ -15,13 +15,12 @@
         $(".nav-list").css("display", "none");
     });
     $(".plus-icon").click(function () {
-        location.href = "https://localhost:7002/Request/NewBloodReQuest";
+        location.href = "/Request/NewBloodReQuest";
         $(".plus-icon").css("display", "none");
     });
-    //$(".nav-item .nav-link").click(function () {
-    //    $(".active-class").removeClass("active-class");
-    //    $(this).addClass("active-class")
-    //});
+    $(".header-blood-request").click(function () {
+        location.href ="/Request/NewBloodReQuest"
+    });
     $(function () {
         var path = location.href;
         $(".nav-item .nav-link").each(function () {

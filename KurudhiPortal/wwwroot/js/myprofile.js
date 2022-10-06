@@ -1,23 +1,25 @@
 ﻿$(document).ready(function () {
     $("#profile-form").validate({
         rules: {
-            userName: {
+            username: {
                 required: true,
+                minlength: 8,
+                maxlength: 25,
             },
             password: {
                 required: true,
                 minlength: 8
             },
-            firstName: {
+            firstname: {
                 required: true
             },
-            lastName: {
+            lastname: {
                 required: true,
             },
             gender: {
                 required: true,
             },
-            bloodGroup: {
+            bloodgroup: {
                 required: true,
             },
             email: {
@@ -27,7 +29,7 @@
             age: {
                 required: true
             },
-            mobileNumber: {
+            mobilenumber: {
                 required: true,
                 minlength: 10
             },
@@ -40,64 +42,71 @@
             country: {
                 required: true
             },
-            lastDonatedDate: {
+            lastdonatedate:{
                 required: true,
-            }
+            },
         },
         messages: {
-            userName: {
-                required: "Please Enter User Name"
+            username: {
+                required: "Please enter user name",
+                minlength: "Please enter valid user name",
+                maxlength: "Please enter correct name",
             },
-            firstName: {
-                required: "Please Enter First Name"
+            firstname: {
+                required: "Please enter first name"
             },
-            lastName: {
-                required: "Please Enter Last Name"
+            lastname: {
+                required: "Please enter last name"
             },
             email: {
-                required: "Please Enter Email",
-                email: "Please Enter Correct Email"
+                required: "Please enter email",
+                email: "Please enter correct email"
             },
             password: {
-                required: "Please Enter Password",
-                minlength: "Please Enter maximum 8 Characters"
+                required: "Please enter password",
+                minlength: "Please enter valid password"
             },
             age: {
-                required: "Please Enter Age"
+                required: "Please enter age"
             },
-            bloodGroup: {
-                required: "Please Enter Blood Group"
+            bloodgroup: {
+                required: "Please enter blood group"
             },
-            mobileNumber: {
-                required: "Please Enter The Contact",
-                minlength: "Please Enter Valid Phone Number"
+            mobilenumber: {
+                required: "Please enter the mobile number",
+                minlength: "Please enter valid mobile number"
             },
             district: {
-                required: "Please Select district"
+                required: "Please select district"
             },
             gender: {
-                required: "Please Select Gender"
+                required: "Please select gender"
             },
             country: {
-                required: "Please Select Country"
+                required: "Please select country"
             },
             state: {
-                required: "Please Select State"
+                required: "Please select state"
             },
-            lastDonatedDate: {
-                required: "Please Enter Last Donated Date",
+            lastdonatedate: {
+                required: "Please enter last donated date",
             },
-            highlight: function (element) {
-                $(element).addClass('border-line');
-            },
-            unhighlight: function (element) {
-                $(element).removeClass('border-line');
-            }
+        },
+        errorElement: "div",
+        errorPlacement: function (error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
+        },
+        highlight: function (element) {
+            $(element).addClass('border-line');
+        },
+        unhighlight: function (element) {
+            $(element).removeClass('border-line');
         }
     });
-    $(".profile-btn").click(function () {
-        $(".bi-pencil").css("display", "inline-block");
-        $(".input-box input").removeAttr("readonly");
+    $(".edit-btn").click(function () {
+        $(".form-floating input").removeAttr("readonly");
+        $('.form-select').removeAttr("disabled");
     });
     $(".profile-save-btn").click(function () {
         $("#profile-form").validate();

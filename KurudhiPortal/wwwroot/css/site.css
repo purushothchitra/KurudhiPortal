@@ -131,7 +131,16 @@
 .border-line {
     border: 1px solid red;
 }
-@media only screen and (max-width:768px){
+.header-blood-request{
+    border:none !important;
+    color:white !important;
+    font-weight:500 !important;
+}
+.header-blood-request:hover{
+    border:none;
+    color:white;
+}
+@media only screen and (max-width:768px) {
     .side-nav-section{
         width:70px;
     }

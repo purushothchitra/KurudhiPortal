@@ -60,13 +60,13 @@
             patientname: {
                 required: "Please enter  patient name",
                 minlength: "Please enter valid patient name",
-                maxlength: "Please enter correct patient name",
+                maxlength: "Please enter valid patient name",
             },
             admissionid: {
                 required: "Please enter admission id",
             },
             age: {
-                required: "please enter age"
+                required: "Please enter age"
             },
             gender: {
                 required: "Please select gender"
@@ -78,7 +78,7 @@
                 required: "Please select blood group"
             },
             bloodunit: {
-                required: "Please enter blood unit"
+                required: "Please enter blood units required"
             },
             medicalstatus: {
                 required: "Please select medical status"
@@ -91,7 +91,7 @@
             },
             attendercontact: {
                 required: "Please enter attender contact",
-                minlength:"Please enter correct attender contact"
+                minlength:"Please enter valid attender contact"
             },
             hospitalname: {
                 required: "Plese enter hospital name"

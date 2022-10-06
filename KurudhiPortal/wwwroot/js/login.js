@@ -61,7 +61,7 @@
         $(".password-show-icon").css("display", "inline-block");
     });
     $(".password-show-icon").click(function () {
-        $("input[type='text']").attr('type', 'password');
+        $(".password-container input[type='text']").attr('type', 'password');
         $(this).css('display', 'none');
         $(".password-hide-icon").css("display", "inline-block");
     });
