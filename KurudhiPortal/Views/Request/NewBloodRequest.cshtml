@@ -28,31 +28,40 @@
         </div>
         <div class="container-fluid">
                 <form id="request-form">
-            <div class="form-group row request-input-container" id="1">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control" name="patientname" id="name" tabindex="1">
-                    <label>Patient Name</label>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" name="patientname" id="name" placeholder="name@example.com">
+                      <label for="name">PatientName</label>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="number" class="form-control form-control-sm" name="admissionid" id="admissionid" tabindex="3">
-                    <label>Admission Id</label>
+                    <div class="form-floating mb-3">
+                      <input type="number" class="form-control" name="admissionid" id="admissionid" placeholder="name@example.com">
+                      <label for="admissionid">AdmissionId</label>
+                    </div>
                 </div>                  
             </div> 
-            <div class="form-group row request-input-container" id="12">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="number" class="form-control form-control-sm" name="age" id="age" tabindex="5">
-                    <label>Age</label>
+                    <div class="form-floating mb-3">
+                      <input type="number" class="form-control" name="age" id="age" placeholder="name@example.com">
+                      <label for="age">Age</label>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <select class="form-select" name="gender"  id="gender" tabindex="11">
-                        <option value="">Gender</option>
+                      <div class="form-floating">
+                          <select class="form-select" name="gender"  id="gender" aria-label="Floating label select example">
+                           <option value="">Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Ohers">Ohers</option>
-                      </select>
+                          </select>
+                          <label for="gender">Gender</label>
+                        </div>
                 </div>                  
             </div> 
-            <div class="form-group row request-input-container" id="12">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6 mb-3 radio-group">
                     <div>
                         <input type="radio" name="bloodtype" value="Blood" tabindex="7">
@@ -68,8 +77,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <select class="form-select" name="bloodgroup" id="bloodgroup" tabindex="13">
-                        <option value="">Blood Group</option>
+                       <div class="form-floating">
+                          <select class="form-select" name="bloodgroup" id="bloodgroup" aria-label="Floating label select example">
+                            <option value="">Blood Group</option>
                         <option value="A+">A+</option>
                         <option value="A-">A-</option>
                         <option value="b+">b+</option>
@@ -78,94 +88,123 @@
                         <option value="AB-">AB-</option>
                         <option value="O+">O+</option>
                         <option value="O-">O-</option>
-                      </select>
+                          </select>
+                          <label for="bloodgroup">BloodGroup</label>
+                        </div>
                 </div>
                                     
             </div> 
-            <div class="form-group row request-input-container" id="12">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="number" class="form-control form-control-sm checkbox" id="bdunit" name="bloodunit" tabindex="16">
-                    <label>Blood Unit</label>
+                    <div class="form-floating mb-3">
+                      <input type="number" class="form-control" id="bdunit" name="bloodunit" placeholder="name@example.com">
+                      <label for="bdunit">BloodUnit</label>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <select class="form-select" name="medicalstatus" id="medicalstatus" tabindex="18">
-                        <option value="">Medical Status</option>
+                      <div class="form-floating">
+                          <select class="form-select" name="medicalstatus" id="medicalstatus" aria-label="Floating label select example">
+                            <option value="">Medical Status</option>
                         <option value="Normal">Normal</option>
                         <option value="Medium">Medium</option>
                         <option value="Emergency">Emergency</option>
-                      </select>
+                          </select>
+                          <label for="medicalstatus">MedicalStatus</label>
+                        </div>
                 </div>                   
             </div> 
-            <div class="form-group row request-input-container" id="12">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="date" class="form-control" name="duedate" id="duedate" tabindex="2">
-                    <label>Due Date</label>
+                    <div class="form-floating mb-3">
+                      <input type="date" class="form-control" name="duedate" id="duedate" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
                 </div> 
                 <div class="col col-md-6">
-                    <input type="text" class="form-control form-control-sm" name="attendername" id="atname" tabindex="4">
-                    <label>Attender Name</label>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" name="attendername" id="atname" placeholder="name@example.com">
+                      <label for="atname">AttenderName</label>
+                    </div>
                 </div>                    
             </div> 
-            <div class="form-group row request-input-container" id="12">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6 div-container">
-                    <input type="number" class="form-control form-control-sm form-input" name="attendercontact" id="contact" tabindex="6">
-                    <label>Attender Contact</label>
+                    <div class="form-floating mb-3">
+                      <input type="number" class="form-control" name="attendercontact" id="contact" placeholder="name@example.com">
+                      <label for="contact">AttenderContact</label>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control form-control-sm" name="hospitalname" id="hosname" tabindex="10">
-                    <label>Hospital Name</label>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" name="hospitalname" id="hosname" placeholder="name@example.com">
+                      <label for="hospitalname">HospitalName</label>
+                    </div>
                 </div>                  
             </div> 
-            <div class="form-group row request-input-container" id="12">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <input type="text" class="form-control form-control-sm" name="hospitaladdress" id="hosaddress" tabindex="12">
-                    <label>Hospital Address</label>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" name="hospitaladdress" id="hosaddress" placeholder="name@example.com">
+                      <label for="hosaddress">HospitalAddress</label>
+                    </div>
                 </div> 
                 <div class="col col-md-6">
-                    <select class="form-select" name="country" id="country" tabindex="14">
-                        <option value="">Country</option>
-                        <option value="India">India</option>
-                      </select>
+                      <div class="form-floating">
+                          <select class="form-select" name="country" id="country" aria-label="Floating label select example">
+                              <option value="">Country</option>
+                              <option value="India">India</option>
+                          </select>
+                          <label for="country">Country</label>
+                        </div>
                 </div>                   
             </div>
-            <div class="form-group row request-input-container" id="12">
+            <div class="form-group row request-input-container">
                 <div class="col-12 col-md-6 col-sm-12 mb-3">
-                         <select class="form-select" name="state" id="state" tabindex="5">
-                            <option value="">Select State</option>
+                          <div class="form-floating">
+                          <select class="form-select" name="state" id="state" aria-label="Floating label select example">
+                              <option value="">Select State</option>
                             <option value="TamilNadu">Tamil Nadu</option>
                             <option value="Kerla">Kerla</option>
                             <option value="Delhi">Delhi</option>
                             <option value="AndraPradesh">Andra Pradesh</option>
                           </select>
+                          <label for="state">State</label>
+                        </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6">
-                    <select class="form-select" name="district" id="district" tabindex="19">
-                        <option value="">District</option>
-                        <option value="Ariyalur">Ariyalur</option>
-                        <option value="Chengalpattu">Chengalpattu</option>
-                        <option value="Chennai">Chennai</option>
-                        <option value="Coimbatore">Coimbatore</option>
-                        <option value="Cuddalore">Cuddalore</option>
-                        <option value="Dharmapuri">Dharmapuri</option>
-                        <option value="Dindigul">Dindigul</option>
-                        <option value="Erode">Erode</option>
-                        <option value="Kallakurichi">Kallakurichi</option>
-                        <option value="Kancheepuram">Kancheepuram</option>
-                        <option value="Karur">Karur</option>
-                        <option value="Krishnagiri">Krishnagiri</option>
-                        <option value="Madurai">Madurai</option>
-                      </select>
+                      <div class="form-floating">
+                          <select class="form-select" name="district" id="district" aria-label="Floating label select example">
+                                <option value="">District</option>
+                                <option value="Ariyalur">Ariyalur</option>
+                                <option value="Chengalpattu">Chengalpattu</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Coimbatore">Coimbatore</option>
+                                <option value="Cuddalore">Cuddalore</option>
+                                <option value="Dharmapuri">Dharmapuri</option>
+                                <option value="Dindigul">Dindigul</option>
+                                <option value="Erode">Erode</option>
+                                <option value="Kallakurichi">Kallakurichi</option>
+                                <option value="Kancheepuram">Kancheepuram</option>
+                                <option value="Karur">Karur</option>
+                                <option value="Krishnagiri">Krishnagiri</option>
+                                <option value="Madurai">Madurai</option>
+                          </select>
+                          <label for="district">District</label>
+                        </div>
                 </div>
             </div>
             <div class="form-group row mb-5" id="12">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <select class="form-select" name="location" id="location" tabindex="17">
-                        <option value="">Select Location</option>
-                        <option value="Thuraipakkam">Thuraipakkam</option>
-                        <option value="Ecr">Ecr</option>
-                        <option value="Tnagar">Tnagar</option>
-                        <option value="Adyar">Adyar</option>
-                    </select>
+                    <div class="form-floating">
+                          <select class="form-select" name="location" id="location" aria-label="Floating label select example">
+                                <option value="">Select Location</option>
+                                <option value="Thuraipakkam">Thuraipakkam</option>
+                                <option value="Ecr">Ecr</option>
+                                <option value="Tnagar">Tnagar</option>
+                                <option value="Adyar">Adyar</option>
+                          </select>
+                          <label for="location">Location</label>
+                    </div>
                 </div> 
             </div>
             <div class="request-btn">

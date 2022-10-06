@@ -1,12 +1,4 @@
-html {
-  font-size: 14px;
-}
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
 .btn {
     background-color: #CD0E16 !important;
 }
@@ -132,8 +124,11 @@ html {
     background-color:#CD0E16;
     color:white !important;
 }
-.error{
-    color:red;
+
+.error {
+    color: red;
+    position: absolute !important;
+    top: 35px !important;
 }
 @media only screen and (max-width:768px){
     .side-nav-section{

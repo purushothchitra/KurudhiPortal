@@ -12,13 +12,116 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.new.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="~/css/myprofile.css"/>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/js/myprofile.js"></script>
 </head>
 <body>
     <section>
 	<div class="container-fluid">
 		<div class="row profile-row">
-			<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-				<partial name="_MyProfile"/>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
+				@*<partial name="_MyProfile"/>*@
+				<div class="profile-container">
+					<form id="profile-form">
+						<div class="edit-btn">
+							  <button type="button" class="btn profile-btn">Edit Profile</button>
+						  </div>
+						  <div class="form-group row">
+							<label for="userName" class="col-sm-2 col-form-label">UserName</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="userName" id="userName" value="@Model.UserName">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="password" class="col-sm-2 col-form-label">Password</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="password" id="password" value="@Model.Password">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="firstName" class="col-sm-2 col-form-label">FirstName</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="firstName" id="firstName" value="@Model.FirstName">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="lastName" class="col-sm-2 col-form-label">LastName</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="lastName" id="lastName" value="@Model.Lastname">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="gender" class="col-sm-2 col-form-label">Gender</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="gender" id="gender" value="@Model.Gender">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="age" class="col-sm-2 col-form-label">Age</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="age" id="age" value="@Model.Age">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="bloodGroup" class="col-sm-2 col-form-label">BloodGroup</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="bloodGroup" id="bloodGroup" value="@Model.BloodGroup">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="email" class="col-sm-2 col-form-label">Email</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="email" id="email" value="@Model.Email">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+							<div class="form-group row">
+							<label for="mobileNumber" class="col-sm-2 col-form-label">MobileNumber</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="mobileNumber" id="mobileNumber" value="@Model.MobileNumber">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="country" class="col-sm-2 col-form-label">Country</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="country" id="country" value="@Model.Country">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="district" class="col-sm-2 col-form-label">District</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="district" id="district" value="@Model.District">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="state" class="col-sm-2 col-form-label">State</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext" name="state" id="state" value="@Model.State">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="form-group row">
+							<label for="lastDonatedDate" class="col-sm-2 col-form-label user-label">LastDonatedDate</label>
+							<div class="col-sm-7 col-7 col-md-5 input-box">
+							  <input type="text" readonly class="form-control-plaintext user-input" name="lastDonatedDate" id="lastDonatedDate" value="@Model.LastDonatedDate">
+							  <i class="bi bi-pencil"></i>
+							</div>
+						  </div>
+						  <div class="save-btn">
+							  <button type="submit" class="btn profile-save-btn">Save Profile</button>
+						  </div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -5,4 +5,47 @@
 .profile-container{
     background-color:white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:30px 30px;
+}
+/*.profile-container div {
+    display:flex !important;
+    justify-content:center !important;
+    background-color:aqua;
+}*/
+.col-form-label{
+    width:150px !important;
+}
+.save-btn {
+    display: flex;
+    justify-content: center;
+}
+.edit-btn {
+    display: flex;
+    justify-content: end;
+}
+.profile-save-btn {
+    font-weight: 500;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+.profile-btn{
+    font-weight: 500;
+    background-color:white !important;
+    color:#CD0E16 !important;
+    border:none !important;
+}
+.profile-btn:hover{
+    color:#CD0E16;
+    border:none;
+}
+.bi-pencil{
+    position:absolute !important;
+    top:0 !important;
+    right:0 !important;
+    display:none;
+}
+.input-box{
+    position:relative;
 }
