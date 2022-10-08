@@ -21,6 +21,9 @@
     $(".header-blood-request").click(function () {
         location.href ="/Request/NewBloodReQuest"
     });
+    $(".setting-icon").click(function () {
+        $(".admin-settings-box").toggle()
+    });
     $(function () {
         var path = location.href;
         $(".nav-item .nav-link").each(function () {

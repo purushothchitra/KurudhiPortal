@@ -1,0 +1,50 @@
+﻿.feedback-section{
+    background-color:white;
+}
+.feedback-row{
+    display:flex;
+    justify-content:center;
+}
+.feedback-container{
+    background-color:white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:30px 30px;
+}
+.feedback-container h2{
+    text-align:center;
+    color:#CD0E16;
+}
+.feedback-btn-container{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+.feedback-btn-container button{
+    border:none;
+    color:white;
+    padding:10px 40px;
+    border-radius:20px;
+    font-weight:500;
+}
+.feedback-btn-container button:hover{
+    color:white;
+}
+.radio-container{
+    display:flex;
+    justify-content:space-evenly;
+    padding:15px 0;
+    border: 1px solid #cccccc;
+    border-radius: 0.25rem;
+    position:relative;
+}
+.command-label{
+    position:absolute;
+    top:-14px;
+    left:15px;
+    background-color:white;
+}
+#Commands-error{
+    position:absolute;
+    bottom:-15px;
+    left:-5px;
+}

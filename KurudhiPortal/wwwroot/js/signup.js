@@ -98,25 +98,43 @@
             $(element).removeClass('border-line');
         }
     });
+    $("#country").change(function () {
+        debugger;
+        let country = $(this).val();
+        $.ajax({
+            url: '/Login/getstate',
+            type: 'POST',
+            data: {"country": country},
+            success: function (data) {
+                debugger;
+                if (data.status == "success") {
+                    alert("success");
+                }
+            },
+            error: function () {
+                console.log('Error in Operation');
+            }
+        });
+    });
     $(".signup-btn").click(function () {
         debugger;
         $("#signup-form").validate();
         if ($("#signup-form").valid()) {
             let userDetails = {
-                username: $("#username").val(),
-                firstname: $("#firstname").val(),
-                country: $("#country").val(),
-                lastname: $("#lastname").val(),
-                state: $("#state").val(),
-                gender: $("#gender").val(),
-                district: $("#district").val(),
-                age: $("#age").val(),
-                bloodgroup: $("#bloodgroup").val(),
-                Password: $("#Password").val(),
-                mobilenumber: $("#mobilenumber").val(),
-                email: $("#email").val(),
+                UserName: $("#username").val(),
+                Password: $("#password").val(),
+                FirstName: $("#firstname").val(),
+                LastName: $("#lastname").val(),
+                Gender: $("#gender").val(),
+                Age: $("#age").val(),
+                BloodGroup: $("#bloodgroup").val(),
+                Email: $("#email").val(),
+                MobileNumber: $("#mobilenumber").val(),
+                Country: $("#country").val(),
+                State: $("#state").val(),
+                District: $("#district").val(),
             }
-
+            console.log(userDetails);
             $.ajax({
                 url: '/Login/Register',
                 type: 'GET',

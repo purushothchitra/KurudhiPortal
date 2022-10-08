@@ -1,0 +1,40 @@
+﻿.bottom-line {
+    border-bottom: 4px solid #CD0E16;
+}
+.search-donors-header {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 20px -20px;
+}
+.available-donors, .all-donors {
+    width: 50%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    color: #CD0E15;
+    cursor: context-menu;
+    position: relative;
+}
+.all-donor-container{
+    display:none;
+}
+.search-btn-box{
+    display:flex;
+    justify-content:center;
+    margin:10px 0;
+}
+.searchdonors-row{
+    display:flex;
+    justify-content:center !important;
+}
+.search-btn{
+    padding:10px 50px;
+    border:none;
+    color:white;
+    font-weight:500;
+    border-radius:20px;
+}
+.search-btn:hover{
+    color:white;
+}

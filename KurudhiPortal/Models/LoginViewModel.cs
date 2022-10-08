@@ -7,18 +7,21 @@
     }
     public class SignUpViewModel
     {
-        public string? userName { get; set; }
-        public int? password { get; set; }
-        public int? firstName { get; set; }
-        public int? lastName { get; set; }
-        public int? Gender { get; set; }
-        public int? age { get; set; }
-        public int? bloodGroup { get; set; }
-        public int? email { get; set; }
-        public int? mobileNumber { get; set; }
-
-        public int? country { get; set; }
-        public int? state { get; set; }
-        public int? district { get; set; }
+        public string? UserName { get; set; }
+        public int? Password { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Gender { get; set; }
+        public int? Age { get; set; }
+        public string? BloodGroup { get; set; }
+        public string? Email { get; set; }
+        public string? MobileNumber { get; set; }
+        public string? Country { get; set; }
+        public string? State { get; set; }
+        public string? District { get; set; }
+    }
+    public class DropdownViewModel
+    {
+        public string? Country { get; set; }
     }
 }

@@ -17,7 +17,9 @@
   bottom: 50px;
   right: 30px;
 }
-
+.blood-request-menu{
+    margin-left:30px;
+}
 #brand {
     font-weight: 700 !important;
     position: relative !important;
@@ -140,6 +142,21 @@
     border:none;
     color:white;
 }
+/*admin setting box style start*/
+.admin-settings-box{
+    width:150px;
+    background-color:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position:absolute;
+    bottom:-10px;
+    right:0;
+    z-index:10;
+    display:none;
+}
+.admin-settings-box h5{
+    text-align:center !important;
+}
+/*admin setting box style end*/
 @media only screen and (max-width:768px) {
     .side-nav-section{
         width:70px;

@@ -38,7 +38,6 @@
                 username: $("#username").val(),
                 password: $("#password").val()
             }
-
             $.ajax({
                 url: '/Login/SignIn',
                 type: 'GET',
@@ -64,5 +63,8 @@
         $(".password-container input[type='text']").attr('type', 'password');
         $(this).css('display', 'none');
         $(".password-hide-icon").css("display", "inline-block");
+    });
+    $(".forgot-password-text").click(function () {
+        location.href = "/Login/Forgot"
     });
 });

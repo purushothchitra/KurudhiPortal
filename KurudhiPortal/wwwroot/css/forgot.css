@@ -1,0 +1,29 @@
+﻿.forgot-password-container {
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    padding:50px 30px;
+}
+.confrom-btn-box{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+.confrom-btn{
+    border:none;
+    color:white;
+    font-weight:500;
+    padding:10px 30px;
+    border-radius:20px;
+}
+.confrom-btn:hover{
+    color:white;
+    border:none;
+}
+.forgot-row{
+    display:flex;
+    justify-content:center;
+}
+.forgot-password-container h2{
+    text-align:center;
+    color:#CD0E16;
+    margin-bottom:30px;
+}

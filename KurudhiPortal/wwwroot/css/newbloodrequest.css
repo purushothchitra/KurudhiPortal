@@ -4,11 +4,9 @@
     margin-bottom:50px;
 }
 
-.form-header{
-    display:flex !important;
-}
 .heading-text{
-    margin:0 25% !important;
+    display:flex;
+    justify-content:center;
 }
 .back-btn {
     padding: 10px 50px;

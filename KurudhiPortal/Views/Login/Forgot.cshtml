@@ -1,0 +1,49 @@
+﻿<head>
+
+</head>
+@{
+    ViewData["Title"] = "Forgot";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KurudhiPortal</title>
+    <link rel="icon" type="image/x-icon" href="~/images/NTK_KURUDHI_Logo.jpg">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.new.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link  rel="stylesheet" href="~/css/forgot.css"/>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/forgot.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row forgot-row">
+                <div class="col-12 col-md-12 col-lg-5 col-xl-6">
+                    <div class="forgot-password-container">
+                        <h2>Forgot Password</h2>
+                        <form id="forgot-form">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="username" name="username" placeholder="username" tabindex="1">
+                              <label for="username">User Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                              <input type="password" class="form-control" id="newpassword" name="newpassword" placeholder="newpassword" tabindex="2">
+                              <label for="newpassword">New Password</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                              <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="confirmpassword" tabindex="3">
+                              <label for="confirmpassword">Confirm Password</label>
+                            </div>
+                            <div class="confrom-btn-box">
+                                <button type="submit" class="btn confrom-btn" tabindex="4">Reset Password</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
