@@ -15,11 +15,6 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
-
-        public IActionResult Logout()
-        {
-            return View();
-        }
         public IActionResult Testing()
         {
 

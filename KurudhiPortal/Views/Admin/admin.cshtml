@@ -11,4 +11,46 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KurudhiPortal.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/admin.css"/>
+    <script src="~/js/admin.js"></script>
 </head>
+<body>
+    <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Manage Users</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Import Users</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Search Users</button>
+    <button class="nav-link" id="nav-add-user-tab" data-bs-toggle="tab" data-bs-target="#nav-new-user" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Add Users</button>
+    <button class="nav-link" id="nav-add-admin-tab" data-bs-toggle="tab" data-bs-target="#nav-add-admin" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Add Admins</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="btn-group-container">
+              <button class="btn">Assign Role</button>
+              <button class="btn">Add Users</button>
+              <button class="btn">Remove Users</button>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Import Users</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <div class="form-floating mb-3 search-box">
+          <input type="search" class="form-control" id="search" placeholder="search">
+          <label for="search">Search</label>
+          <i class="bi bi-search"></i>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-new-user" role="tabpanel" aria-labelledby="nav-add-user-tab">
+      <div>
+          <button class="btn">Add Users</button>
+          @*<button class="btn">Remove Users</button>*@
+      </div>
+  </div>
+  <div class="tab-pane fade" id="nav-add-admin" role="tabpanel" aria-labelledby="nav-add-admin-tab">
+      <div>
+          <button class="btn">Add Admin</button>
+          <button class="btn">Remove Admin</button>
+      </div>
+  </div>
+</div>
+</body>

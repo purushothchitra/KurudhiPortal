@@ -27,13 +27,23 @@
 .searchdonors-row{
     display:flex;
     justify-content:center !important;
+    border:1px solid #e6e6e6;
+    position:relative;
+    padding:24px 0;
 }
-.search-btn{
-    padding:10px 50px;
-    border:none;
-    color:white;
-    font-weight:500;
-    border-radius:20px;
+.search-donors{
+    position:absolute !important;
+    width:130px;
+    background-color:white;
+    top:-12px;
+    left:10px;
+}
+.search-btn {
+    padding: 10px 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
 }
 .search-btn:hover{
     color:white;

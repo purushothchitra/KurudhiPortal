@@ -18,7 +18,7 @@
   right: 30px;
 }
 .blood-request-menu{
-    margin-left:30px;
+    margin-left:50px;
 }
 #brand {
     font-weight: 700 !important;
@@ -148,8 +148,9 @@
     background-color:white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position:absolute;
-    bottom:-10px;
     right:0;
+    top:65px;
+    /*bottom:100px;*/
     z-index:10;
     display:none;
 }
@@ -175,3 +176,65 @@
     }
 }
 /* side navbar end */
+
+/*logout style start*/
+.logout-container{
+    background-color:white;
+    padding:30px 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.prifile-img{
+    width:130px;
+    height:130px;
+    margin:30px auto;
+}
+.prifile-img img{
+    border-radius:50%;
+}
+.logout-row{
+    display:flex;
+    justify-content:center;
+    margin:0;
+}
+.logout-btn-container{
+    display:flex;
+    justify-content:center;
+}
+.logout-container p {
+    text-align: center;
+    font-weight: 500;
+}
+.logout-container h2{
+    text-align:center;
+    color:#CD0E16;
+    margin-bottom:20px;
+}
+.no-btn, .yes-btn {
+    padding: 8px 10px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 5px 30px;
+}
+.no-btn:hover, .yes-btn:hover{
+    color:white;
+}
+.no-btn {
+   /* background-color: #fccfd2 !important;*/
+    border:1px solid red !important;
+    background-color:white !important;
+    color:#CD0E16;
+}
+.no-btn:hover{
+    background-color:#fde7e8 !important;
+    color:#CD0E16;
+}
+.yes-btn{
+    background-color:#CD0E16 !important;
+}
+.bi-box-arrow-in-right{
+    font-weight:bold;
+    font-size:20px;
+}
+/*logout style end*/

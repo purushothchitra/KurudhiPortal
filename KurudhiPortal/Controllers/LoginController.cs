@@ -18,12 +18,10 @@ namespace KurudhiPortal.Controllers
         {
             return View();
         }
-
         public IActionResult SignIn(LoginViewModel userValidation)
         {
             return Json(new { status = "success", ex = "Model recieved" });
         }
-
         public IActionResult SignUp()
         {
             var district = new List<string>
@@ -104,6 +102,10 @@ namespace KurudhiPortal.Controllers
         }
 
         public IActionResult AboutUs()
+        {
+            return View();
+        }
+        public IActionResult Logout()
         {
             return View();
         }

@@ -52,4 +52,22 @@
         $(".available-donor-container").css("display", "none");
         $(".all-donor-container").css("display", "block");
     });
+    $("#country").change(function () {
+        debugger;
+        let country = $(this).val();
+        $.ajax({
+            url: '/Admin/ManageUsers',
+            type: 'GET',
+            data: { "country": country },
+            success: function (data) {
+                debugger;
+                if (data.status == "success") {
+                    alert("success");
+                }
+            },
+            error: function () {
+                console.log('Error in Operation');
+            }
+        });
+    });
 });

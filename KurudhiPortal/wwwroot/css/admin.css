@@ -1,1 +1,56 @@
-﻿
+﻿.admin-nav {
+    background-color: white;
+    border-bottom: 1px solid #d9d9d9;
+    padding:8px 0;
+}
+.admin-nav ul{
+    display:flex;
+    margin:0;
+}
+.admin-nav ul li{
+    list-style:none;
+    margin:0 10px;
+}
+.admin-nav ul li a{
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+}
+.underline-style{
+    border-bottom:4px solid #CD0E16;
+}
+.import-user-section, .add-users-section, .manage-users-section, .add-admin-section{
+    display:none;
+}
+.tab-pane{
+    border: 1px solid #dee2e6!important;
+    margin:10px 10px;
+}
+.btn-group-container{
+    display:flex;
+    justify-content:space-around;
+}
+.btn-group-container button{
+    border:none;
+    font-weight:500;
+    color:white;
+    margin:0 10px;
+}
+.btn-group-container button:hover{
+    color:white;
+    border:none;
+}
+.btn-group-container{
+    display:flex;
+}
+.search-box{
+    position:relative;
+}
+.bi-search{
+    position:absolute;
+    right: 24px;
+    top: 17px;
+}
+#search{
+    padding-right:50px !important;
+}

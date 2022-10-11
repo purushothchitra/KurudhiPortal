@@ -1,4 +1,6 @@
-﻿namespace KurudhiPortal.Models
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+
+namespace KurudhiPortal.Models
 {
     public class BloodRequestViewModel
     {
@@ -20,4 +22,20 @@
         public string? State { get; set; }
         public string? Location { get; set; }
     }
+    public class LanguageViewModel
+    {
+        public string Language { get; set; }
+        public List<SelectListItem> Languages { get; set; } = new List<SelectListItem>
+        {
+            new SelectListItem { Value = "CS", Text = "C#" },
+            new SelectListItem { Value = "JS", Text = "JavaScript" },
+            new SelectListItem { Value = "TS", Text = "TypeScript"  },
+        };
+    }
+    public class CountryViewModel
+    {
+        public string country { get; set; }
+        
+    }
+
 }

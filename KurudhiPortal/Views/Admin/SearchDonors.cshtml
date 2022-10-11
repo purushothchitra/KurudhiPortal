@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "SearchDonors";
 }
 <head>
@@ -21,9 +20,12 @@
         <form id="search-donors-form">
             <div class="form-group row searchdonors-row">
                     <div class="col-12 col-md-3 col-sm-12 col-lg-2 col-xl-2">
-                          <div class="form-floating mb-3">
+                          <div class="form-floating">
                               <select class="form-select" name="country" id="country" aria-label="Floating label select example" tabindex="1">
                                   <option value="">Select Country</option>
+                                  <option value="india">India</option>
+                                  <option value="usa">Usa</option>
+
                               </select>
                               <label for="state">Select Country</label>
                           </div>
@@ -37,7 +39,7 @@
                             </div>
                     </div>
                     <div class="col-12 col-md-6 col-sm-12 col-lg-2 col-xl-2">
-                          <div class="form-floating mb-3">
+                          <div class="form-floating">
                               <select class="form-select" name="district" id="district" aria-label="Floating label select example" tabindex="3">
                                   <option value="">Select District</option>
                               </select>
@@ -52,13 +54,28 @@
                               <label for="district">Select Location</label>
                             </div>
                     </div>
+                    <div class="col-12 col-md-6 col-sm-12 col-lg-2 col-xl-2">
+                          <div class="form-floating">
+                              <select class="form-select" name="location" id="location" aria-label="Floating label select example" tabindex="4">
+                                    <option value="">Select BloodGroup</option>
+                              </select>
+                              <label for="district">Select BloodGroup</label>
+                            </div>
+                    </div>
                     <div class="col-12 col-md-6 col-sm-12 col-lg-2 col-xl-2 ">
                         <div class="search-btn-box">
                             <button type="submit" class="btn search-btn" tabindex="5">Search</button>
                         </div>
                     </div>
+                    <span class="search-donors">Searcg Donors</span>
                 </div>
         </form>
+        @*<div class="form-floating">
+                              <select class="form-select"  asp-items="Model.Languages" name="location" id="location" aria-label="Floating label select example" tabindex="4">
+                                    
+                              </select>
+                              <label for="district">Select BloodGroup</label>
+                            </div>*@
     </div>
     </section>
         <section class="search-donors-header">
