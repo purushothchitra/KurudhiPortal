@@ -238,3 +238,7 @@
     font-size:20px;
 }
 /*logout style end*/
+.row{
+    margin:0 !important;
+    padding:0 !important;
+}

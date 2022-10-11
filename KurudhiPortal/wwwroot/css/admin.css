@@ -54,3 +54,72 @@
 #search{
     padding-right:50px !important;
 }
+.manage-users-nav ul{
+    display:flex;
+    margin:0;
+}
+.manage-users-nav li {
+    list-style: none;
+    margin:0 10px;
+    background-color:aqua;
+    padding:20px 20px;
+}
+.manage-users-nav li a{
+    text-decoration:none;
+    color:black;
+}
+.filter-btn button{
+    color:white;
+    font-weight:bold;
+    border:none;
+    padding:10px 30px;
+    border-radius:30px;
+    margin-top:5px;
+}
+.filter-btn button:hover{
+    color:white;
+}
+.filter-row{
+   display:flex;
+    justify-content:center !important;
+    border:1px solid #e6e6e6;
+    position:relative;
+    padding: 24px 0 !important;
+    margin: 10px !important;
+}
+#nav-new-user h2{
+    color:#CD0E16;
+    text-align:center;
+    margin-bottom:20px;
+}
+.import-user-box{
+    display:flex;
+    justify-content:end;
+    margin:10px;
+}
+.import-user-box button{
+    color:white;
+    font-weight:500;
+    border:none;
+    padding:10px 30px;
+    border-radius:25px;
+}
+.import-user-box button:hover{
+    color:white;
+}
+.create-user button{
+    color:white;
+    font-weight:500;
+    border:none;
+    padding:10px 30px;
+    border-radius:25px;
+}
+.create-user button:hover{
+    color:white;
+}
+.create-user{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+
