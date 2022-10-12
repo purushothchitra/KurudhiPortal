@@ -10,7 +10,7 @@
         },
         messages: {
             username: {
-                required: "Please enter username or mobile number",
+                required: "Please enter username or email or mobile number",
             },
             password: {
                 required: "Please enter password",

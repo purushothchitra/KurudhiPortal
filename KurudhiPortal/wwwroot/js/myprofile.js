@@ -48,7 +48,7 @@
         },
         messages: {
             username: {
-                required: "Please enter user name",
+                required: "Please enter user name or email or mobile number",
                 minlength: "Please enter valid user name",
                 maxlength: "Please enter correct name",
             },
